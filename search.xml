@@ -3,21 +3,6 @@
   
     
     <entry>
-      <title></title>
-      <url>/2017/12/28/%E5%81%87%E9%9D%A2%E9%A3%AF%E5%BA%97/</url>
-      <content type="html"><![CDATA[<hr>
-<p>title: 假面飯店<br>date: 2016-12-28 10:36:27<br>tags:</p>
-<ul>
-<li>推理</li>
-<li>東野圭吾</li>
-<li>2012<br>categories: 書籍<br>thumbnail: /images/book_hotel.jpg</li>
-</ul>
-]]></content>
-      
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[我殺了他]]></title>
       <url>/2017/12/28/%E6%88%91%E6%AE%BA%E4%BA%86%E4%BB%96/</url>
       <content type="html"></content>
@@ -625,6 +610,31 @@
     </entry>
     
     <entry>
+      <title><![CDATA[假面飯店]]></title>
+      <url>/2016/12/28/%E5%81%87%E9%9D%A2%E9%A3%AF%E5%BA%97/</url>
+      <content type="html"><![CDATA[<p>這是一本可以推理的故事，最後會有恍然大悟的感覺(如果沒猜到的話)<br>之後所出版的  <a href="https://bookmad.github.io/2017/01/28/%E5%81%87%E9%9D%A2%E9%A3%AF%E5%BA%97%EF%BC%9A%E5%89%8D%E5%A4%9C/" target="">假面飯店: 前夜</a>和這本書沒什麼關係<br>只是角色一樣而已</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 書籍 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 推理 </tag>
+            
+            <tag> 東野圭吾 </tag>
+            
+            <tag> 2012 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[時間脫離者]]></title>
       <url>/2016/12/22/%E6%99%82%E9%96%93%E8%84%AB%E9%9B%A2%E8%80%85/</url>
       <content type="html"><![CDATA[   <div class="video-container"><iframe src="//www.youtube.com/embed/i3DwHFLSYvs" frameborder="0" allowfullscreen></iframe></div>
@@ -795,7 +805,8 @@
     <entry>
       <title><![CDATA[假面山莊殺人事件]]></title>
       <url>/2016/02/28/%E5%81%87%E9%9D%A2%E5%B1%B1%E8%8E%8A%E6%AE%BA%E4%BA%BA%E4%BA%8B%E4%BB%B6/</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[<p>看這本書腦中一直出現柯南的畫面<br>因為在柯南某一集地點也在一個被封閉的山莊裡<br>這本也很好看!</p>
+]]></content>
       
         <categories>
             
