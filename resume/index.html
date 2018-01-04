@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Resume-ShihYing</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 微軟正黑體 !important;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+
+
+    a {
+      color: gray;
+    }
+
+    .container-fluid .p-0 {
+      font-family: 微軟正黑體 !important;
+    }
+
+    #page-top {
+      font-family: 微軟正黑體 !important;
+    }
+
+    section {
+      font-family: 微軟正黑體 !important;
+    }
+
+    .using_skill {
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .frame {
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      perspective: 500px;
+      float: left;
+    }
+
+    .frame img {
+      width: 300px;
+      height: 300px;
+      margin-top: 10px;
+    }
+
+    .frame .details {
+      width: 70%;
+      height: 65%;
+      padding: 5% 8%;
+      position: absolute;
+      content: "";
+      top: 42%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotateY(90deg);
+      transform-origin: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      opacity: 0;
+      transition: all 0.4s ease-in;
+
+    }
+
+    .bg-cover {
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .frame .details {
+      transform: translate(-50%, -50%) rotateY(0deg);
+      opacity: 1;
+    }
+
+    .popUpLeft {
+      width: 57%;
+      float: left;
+      margin-right: 5%;
+    }
+
+    .popUpRight {
+      width: 38%;
+      float: right;
+    }
+
+    .popUpLeft img {
+      width: 100%;
+    }
+
+    .popUpBtn {
+      background-color: #bdcbb6;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 10px 5% 10px 5%;
+      width: 90%;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+
+    .popUpService {
+      font-size: 13px;
+      font-style: italic;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      letter-spacing: 0px;
+      padding: 4px;
+      background-color: #EEEFE5;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .job {
+      color: red;
+      display: inline;
+    }
+
+    .ulstyle {
+      margin-left: 5%;
+    }
+
+    .ul2style {
+      margin-left: 7%;
+    }
+
+
+    .header-carousel-item {
+      height: 500px;
+      width: 100%;
+    }
+
+    .modal.show .modal-dialog {
+
+
+      max-width: 1000px !important;
+
+    }
+
+    @media (min-width: 1080px) {
+
+      .frame {
+        -ms-flex: 0 0 33% !important;
+        flex: 0 0 33% !important;
+        max-width: 33% !important;
+      }
+    }
+
+    .popUpBtn:hover {
+      background-color: #778472;
+      cursor: pointer;
+    }
+
+    .popUpTitle {
+      color: #d76713;
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 10px;
+    }
+
+    #cboxClose {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+      background-color: #d76713;
+      padding: 8px 11px 8px 11px;
+      color: #ffffff;
+      -moz-border-top-left-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+
+    @import "compass/css3";
+
+    /* General styling */
+
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+    }
+
+    .carousel-indicators active {
+
+      background-color: cadetblue !important;
+    }
+
+    .carousel-indicators li {
+
+      background-color: black;
+    }
+
+    .carousel-control-prev-icon {
+
+      background-color: gray !important;
+    }
+
+    .carousel-control-next-icon {
+
+      background-color: gray !important;
+    }
+
+    /* Modal overlay styling */
+
+    p {
+      display: inline-block;
+      text-align: center;
+      padding: 10px;
+      font: 14px roboto;
+      color: #777;
+      vertical-align: middle;
+
+    }
+
+    .demo {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 763px) {
+      .popUpTitle {
+        color: #d76713;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">履歷表</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">關於我</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">工作經歷</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">教育程度</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">技能</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">作品集</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="index_en.html">English</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <div class="my-auto">
+        <h1 class="mb-0">曾詩穎</h1>
+
+        <div class="subheading mb-5">聯絡我: shihying3@gmail.com</div>
+        <p class="mb-1">網頁前端使用HTML、JavaScript等，後端使用php(近期學習Node.js)，有獨立自主的能力。</p>
+        <ul class="list-inline list-social-icons mb-0">
+
+        </ul>
+        <div class="my-auto">
+
+          <p>除了當一個網頁工程師，我也喜歡運動、閱讀書籍和聽音樂，有架設一個用wordpress建置的
+            <a href="http://musicmad.gowp.space" style="font-size: 20px;color: blue">音樂部落格</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <div class="my-auto">
+        <h2 class="mb-5">工作經歷</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">網頁工程師</h3>
+            <div class="subheading mb-3">工作內容:網頁開發(前端+後端)</div>
+            <ul class="ulstyle">
+              <li class="lihead">開發銀髮健腦遊戲平台
+                <ul class="ulstyle">
+                  <li>使用 Html5(採用phaser.js遊戲框架)開發健腦小遊戲</li>
+                  <li>圖形化報表 - c3.js 呈現遊戲紀錄</li>
+                  <li>利用 AJAX 撈取JSON資料並顯示在網頁上(JSON資料以PHP撈取印出)</li>
+                  <li>HTML5 + CSS 完成RWD頁面架構和布局</li>
+                  <li>
+                    <div class="job justify-items-center">此專案使團隊得到與新北市政府關懷老人銀髮族議題等合作
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>開發教育品質管理平台
+                <ul class="ul2style">
+                  <li>圖形化報表 - 使用MS的Power BI視覺化工具呈現多個教育儀錶板</li>
+                  <li>頁面以Bootstrap刻版</li>
+                  <li>
+                    <div class="job justify-items-center">此專案替公司爭取與越南政府合作機會合作</div>
+                  </li>
+                </ul>
+              </li>
+              <li>台北影視音實驗學校
+                <ul class="ul2style">
+                  <li>維運OpenEMIS school(開源的學校行政系统)，並依學校需求做客制化修改(PHP)</li>
+                </ul>
+              </li>
+              <li>出缺勤系統
+                <ul class="ul2style">
+                  <li>後端使用PHP撈取Mysql資料供台北影視音學校匯出每季學生出席紀錄</li>
+                </ul>
+              </li>
+              <li>越南觀光DEMO平台
+                <ul class="ul2style">
+                  <li>圖形化報表 - 使用Morris.js圖表呈現各個觀光數據儀錶板</li>
+                  <li>頁面以Bootstrap刻版</li>
+                  <li>
+                    <div class="job justify-items-center">此專案替公司爭取與越南政府合作機會合作</div>
+                  </li>
+                </ul>
+              </li>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Nov. 2016 - Present</span>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <div class="my-auto">
+        <h2 class="mb-5">教育程度</h2>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">國立中央大學</h3>
+            <div class="subheading mb-3">碩士</div>
+            <div class="subheading mb-3">資訊工程學系</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2014 - August 2016</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">國立海洋大學</h3>
+            <div class="subheading mb-3">學士</div>
+            <div class="subheading mb-3">資訊工程學系</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2010 - June 2014</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <div class="my-auto">
+        <h2 class="mb-5">技能</h2>
+        <div class="subheading mb-3">程式語言 &amp; 工具</div>
+        <ul class="ulstyle">
+          <li>
+            <div class="skill">前端: HTML、JavaScript、CSS、Bootstrap、Wordpress</div>
+          </li>
+          <li>
+            <div class="skill">後端: PHP、Node.js</div>
+          </li>
+          <li>
+            <div class="skill">資料庫: MySql</div>
+          </li>
+          <li>
+            <div class="skill">版本控制: git</div>
+          </li>
+          <li>
+            <div class="skill">視覺化BI工具: Power BI</div>
+          </li>
+          </li>
+        </ul>
+        <ul class="list-inline list-icons">
+          <li class="list-inline-item">
+            <i class="devicons devicons-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-css3"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-javascript"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-jquery"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-bootstrap"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-wordpress"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-php"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-mysql"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-git"></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <div class="my-auto">
+        <h2 class="mb-5">作品集</h2>
+        <div class="row">
+
+
+          <div class="frame col-sm-12 col-md-6 col-lg-6" data-toggle="modal" data-target="#HexoModal">
+            <img src="img/book.jpg">
+
+            <div class="details">
+              <h3>Movie&Book sharing</h3>
+              <p>此作品為自己的興趣，推薦自己看過的書籍與電影，也為自己看過的東西做紀錄。</p>
+            </div>
+
+
+            <div class="using_skill">使用技術
+              <br>Hexo、Node.js</div>
+          </div>
+
+          <div class="frame col-sm-12 col-md-6 col-lg-6" data-toggle="modal" data-target="#erpModal">
+            <img src="img/erp1.jpg">
+
+            <div class="details">
+              <h3>教育
+                <br>品質管理系統</h3>
+              <p>藉由視覺化圖表呈現縣市各品質分析</p>
+            </div>
+
+
+            <div class="using_skill">使用技術
+              <br>HTML、PHP、bootstrap、Javascript、PowerBI、MySql</div>
+          </div>
+          <div class="frame col-sm-12 col-md-6 col-lg-6" data-toggle="modal" data-target="#gameModal">
+            <img src="img/game1.jpg">
+
+            <div class="details">
+              <h3>銀髮族
+                <br>健腦平台</h3>
+              <p>以Html5改寫原以Flash撰寫的健腦遊戲，供大眾玩樂活化大腦，並資料統計出個人大腦面向能力分數。</p>
+            </div>
+
+            <div class="using_skill">使用技術
+              <br>HTML5、PHP、bootstrap、Javascript、MySql</div>
+          </div>
+
+          <div class="frame col-sm-12 col-md-6 col-lg-6" data-toggle="modal" data-target="#gameAdminModal">
+            <img src="img/game_admin.jpg">
+
+            <div class="details">
+              <h3>銀髮族健腦
+                <br>後台管理系統</h3>
+              <p>新增、啟用、停權帳號後台管理。</p>
+            </div>
+
+            <div class="using_skill">使用技術
+              <br>HTML5、PHP、bootstrap、Javascript、MySql</div>
+          </div>
+
+          <div class="frame col-sm-12 col-md-6 col-lg-6" data-toggle="modal" data-target="#DCCModal">
+            <img src="img/company1.jpg">
+            <div id="star" class="dialog-open">
+              <div class="details">
+                <h3>公司部門網站</h3>
+                <p>以Wordpress建置部門網站</p>
+              </div>
+            </div>
+            <div class="using_skill">使用技術
+              <br>Wordpress</div>
+          </div>
+
+          <div class="frame col-sm-12 col-md-6 col-lg-6" data-toggle="modal" data-target="#attendanceModal">
+            <img src="img/record.jpg">
+            <div id="star" class="dialog-open">
+              <div class="details">
+                <h3>學生
+                  <br>出缺勤系統</h3>
+                <p>撈取北市某實驗學校的學生出缺勤資料，供老師查看當下班級出席與學期出席率。</p>
+              </div>
+            </div>
+
+            <div class="using_skill">使用技術
+              <br>HTML、PHP、Javascript、MySql</div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- show modal -->
+  <div class="modal fade" id="HexoModal" tabindex="-1" role="dialog" aria-labelledby="HexoModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="popUpLeft">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/book.jpg)">
+
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/book1.jpg)">
+
+                </div>
+                <!-- <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
+                 
+                </div> -->
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <!-- <img src="img/book.jpg" alt=""> -->
+          </div>
+          <div class="popUpRight">
+            <div class="popUpTitle">Movie&Book sharing</div>
+
+            <div class="popUpService">Web Design</div>
+            <div class="popUpService">Hexo</div>
+            <div class="popUpService">Node.js</div>
+            <div class="popUpService">Markdown</div>
+            運用Hexo網誌框架建置分享電影與書籍的BLOG，新增文章以Markdown功能撰寫，讓網頁能夠流暢瀏覽。
+            <br>
+            <br>
+            <a href="https://bookmad.github.io" target="_blank">
+              <div class="popUpBtn">LAUNCH WEBSITE</div>
+            </a>
+            <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="erpModal" tabindex="-1" role="dialog" aria-labelledby="erpModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="popUpLeft">
+            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/erp1.jpg)">
+
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp2.jpg)">
+
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
+
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="popUpRight">
+            <div class="popUpTitle">教育品質管理系統</div>
+            <div class="popUpService">Web Design</div>
+            <div class="popUpService">Development</div>
+            <div class="popUpService">Power BI</div>
+            <div class="popUpService">Education</div>
+            運用多個儀錶板分析縣市教育所關心議題，供教育局或學校警覺，本系統為DEMO版本。
+            <br>
+            <br>
+            <a href="http://host02.iiiedu.org.tw/QERP/" target="_blank">
+              <div class="popUpBtn">LAUNCH WEBSITE</div>
+            </a>
+            <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="popUpLeft">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/game2.jpg)">
+
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game4.jpg)">
+
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game5.jpg)">
+                </div>
+
+                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game6.jpg)">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="popUpRight">
+            <div class="popUpTitle">銀髮族健腦平台</div>
+            <div class="popUpService">Web Design</div>
+            <div class="popUpService">Development</div>
+            <div class="popUpService">Power BI</div>
+            <div class="popUpService">Education</div>
+            提供多款健腦遊戲供銀髮族活化腦力，並利用遊玩log紀錄建立圖表分析供使用者查看遊玩歷程。
+            <br>
+            <br>
+            <a href="http://mobile.gyrigym.com/" target="_blank">
+              <div class="popUpBtn">LAUNCH WEBSITE</div>
+            </a>
+            <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="gameAdminModal" tabindex="-1" role="dialog" aria-labelledby="gameAdminModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="popUpLeft">
+            <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                <!-- <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li> -->
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/game_admin.jpg)">
+
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game_admin2.jpg)">
+
+                </div>
+                <!-- <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
+                             
+                            </div> -->
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="popUpRight">
+            <div class="popUpTitle">銀髮族健腦後台管理系統</div>
+            <div class="popUpService">Web Design</div>
+            <div class="popUpService">Development</div>
+            <div class="popUpService">php</div>
+            <div class="popUpService">Education</div>
+            帳號管理停權等
+            <br>
+            <br>
+
+            <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="DCCModal" tabindex="-1" role="dialog" aria-labelledby="DCCModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="popUpLeft">
+            <img src="img/company1.jpg" alt="">
+          </div>
+          <div class="popUpRight">
+            <div class="popUpTitle">公司部門網站</div>
+            <div class="popUpService">Web Design</div>
+            <div class="popUpService">Wordpress</div>
+            <div class="popUpService">css</div>
+            以wordpress架設公司中心網站，裡頭使用css與html修改客置頁面。
+            <br>
+            <br>
+
+            <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="attendanceModal" tabindex="-1" role="dialog" aria-labelledby="attendanceModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="popUpLeft">
+            <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                <!-- <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li> -->
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/record.jpg)">
+
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/record1.jpg)">
+
+                </div>
+                <!-- <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
+                                         
+                                        </div> -->
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="popUpRight">
+            <div class="popUpTitle">學生出缺勤系統</div>
+            <div class="popUpService">Web Design</div>
+            <div class="popUpService">php</div>
+            <div class="popUpService">mysql</div>
+            <div class="popUpService">html</div>
+            <div class="popUpService">javascript</div>
+            供台北影視音實驗學校匯出學生出缺勤紀錄。
+            <br>
+            <br>
+
+            <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+
+  <!-- Custom scripts for this template -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
