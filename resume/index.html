@@ -89,9 +89,9 @@
     }
 
     .bg-cover {
-            background-size: cover;
-            background-position: center center;
-        }
+      background-size: cover;
+      background-position: center center;
+    }
 
     .frame .details {
       transform: translate(-50%, -50%) rotateY(0deg);
@@ -138,6 +138,20 @@
       margin-bottom: 10px;
       text-align: center;
     }
+
+    .job {
+      color: red;
+      display: inline;
+    }
+
+    .ulstyle {
+      margin-left: 5%;
+    }
+
+    .ul2style {
+      margin-left: 7%;
+    }
+
 
     .header-carousel-item {
       height: 500px;
@@ -195,7 +209,25 @@
       outline: 0;
     }
 
+    .carousel-indicators active {
 
+      background-color: cadetblue !important;
+    }
+
+    .carousel-indicators li {
+
+      background-color: black;
+    }
+
+    .carousel-control-prev-icon {
+
+      background-color: gray !important;
+    }
+
+    .carousel-control-next-icon {
+
+      background-color: gray !important;
+    }
 
     /* Modal overlay styling */
 
@@ -270,7 +302,7 @@
         <h1 class="mb-0">曾詩穎</h1>
 
         <div class="subheading mb-5">聯絡我: shihying3@gmail.com</div>
-        <p class="mb-5">目前開發技能網頁前端使用HTML、JavaScript等，後端使用php(近期學習Node.js)，有獨立自主的能力。</p>
+        <p class="mb-1">網頁前端使用HTML、JavaScript等，後端使用php(近期學習Node.js)，有獨立自主的能力。</p>
         <ul class="list-inline list-social-icons mb-0">
 
         </ul>
@@ -290,8 +322,48 @@
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">網頁工程師</h3>
-            <div class="subheading mb-3">網頁開發(前端+後端)</div>
-            <div class="subheading mb-3">系統專案文件、使用手冊等文件撰寫</div>
+            <div class="subheading mb-3">工作內容:網頁開發(前端+後端)</div>
+            <ul class="ulstyle">
+              <li class="lihead">開發銀髮健腦遊戲平台
+                <ul class="ulstyle">
+                  <li>使用 Html5(採用phaser.js遊戲框架)開發健腦小遊戲</li>
+                  <li>圖形化報表 - c3.js 呈現遊戲紀錄</li>
+                  <li>利用 AJAX 撈取JSON資料並顯示在網頁上(JSON資料以PHP撈取印出)</li>
+                  <li>HTML5 + CSS 完成RWD頁面架構和布局</li>
+                  <li>
+                    <div class="job justify-items-center">此專案使團隊得到與新北市政府關懷老人銀髮族議題等合作
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>開發教育品質管理平台
+                <ul class="ul2style">
+                  <li>圖形化報表 - 使用MS的Power BI視覺化工具呈現多個教育儀錶板</li>
+                  <li>頁面以Bootstrap刻版</li>
+                  <li>
+                    <div class="job justify-items-center">此專案替公司爭取與越南政府合作機會合作</div>
+                  </li>
+                </ul>
+              </li>
+              <li>台北影視音實驗學校
+                <ul class="ul2style">
+                  <li>維運OpenEMIS school(開源的學校行政系统)，並依學校需求做客制化修改(PHP)</li>
+                </ul>
+              </li>
+              <li>出缺勤系統
+                <ul class="ul2style">
+                  <li>後端使用PHP撈取Mysql資料供台北影視音學校匯出每季學生出席紀錄</li>
+                </ul>
+              </li>
+              <li>越南觀光DEMO平台
+                <ul class="ul2style">
+                  <li>圖形化報表 - 使用Morris.js圖表呈現各個觀光數據儀錶板</li>
+                  <li>頁面以Bootstrap刻版</li>
+                  <li>
+                    <div class="job justify-items-center">此專案替公司爭取與越南政府合作機會合作</div>
+                  </li>
+                </ul>
+              </li>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Nov. 2016 - Present</span>
@@ -334,7 +406,7 @@
       <div class="my-auto">
         <h2 class="mb-5">技能</h2>
         <div class="subheading mb-3">程式語言 &amp; 工具</div>
-        <ul>
+        <ul class="ulstyle">
           <li>
             <div class="skill">前端: HTML、JavaScript、CSS、Bootstrap、Wordpress</div>
           </li>
@@ -485,10 +557,10 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/book.jpg)">
-                 
+
                 </div>
                 <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/book1.jpg)">
-                  
+
                 </div>
                 <!-- <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
                  
@@ -507,7 +579,7 @@
           </div>
           <div class="popUpRight">
             <div class="popUpTitle">Movie&Book sharing</div>
-             
+
             <div class="popUpService">Web Design</div>
             <div class="popUpService">Hexo</div>
             <div class="popUpService">Node.js</div>
@@ -538,13 +610,13 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/erp1.jpg)">
-                 
+
                 </div>
                 <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp2.jpg)">
-                  
+
                 </div>
                 <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
-                 
+
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -590,14 +662,14 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/game2.jpg)">
-            
+
                 </div>
                 <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game4.jpg)">
-            
+
                 </div>
                 <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game5.jpg)">
                 </div>
-            
+
                 <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game6.jpg)">
                 </div>
               </div>
@@ -643,10 +715,10 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/game_admin.jpg)">
-            
+
                 </div>
                 <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game_admin2.jpg)">
-            
+
                 </div>
                 <!-- <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
                              
@@ -715,10 +787,10 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/record.jpg)">
-            
+
                 </div>
                 <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/record1.jpg)">
-            
+
                 </div>
                 <!-- <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
                                          
