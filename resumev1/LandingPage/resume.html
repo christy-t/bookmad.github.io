@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 微軟正黑體 !important;
+        }
+
+        .btn {
+            border-width: 2px;
+        }
+
+        .header-carousel-item {
+            height: 450px;
+        }
+
+        .bg-cover {
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, .6);
+        }
+
+        .form-control {
+            border-width: 2px;
+        }
+
+        .project_img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .project_right {
+            height: 100px;
+        }
+
+        .project_name{
+            font-weight: bold;
+        }
+
+        .project_skill{
+            color:gray;
+        }
+
+        @media (min-width: 767px) {
+            .text-md-dark {
+                color: #333;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-secondary py-1">
+        <div class="container text-right">
+            <a href="#" class="text-white">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="text-white">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white border">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="" style="height:30px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首頁
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            美味菜單
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline">
+                    <a href="#" style=" font-family: 微軟正黑體;color:gray; ">
+                        <i class="fa fa-download fa-1x" aria-hidden="true"></i>XX</a>
+
+                    <!-- <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">註冊</a> -->
+                </form>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-sm-12 p-4">
+                <header>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(fighting.jpg)">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>食物</h3>
+                                    <p>齁假</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(gray.jpg)">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>食物</h3>
+                                    <p>超齁假</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(mchotdog.jpg)">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>食物</h3>
+                                    <p>超級齁假</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </header>
+            </div>
+            <div class="col-lg-5 col-sm-12 pt-4 pl-2">
+                <div class="row">
+                    <div class="col-5 pb-3">作品集</div>
+                    <div class="col-7">作品名稱與使用技術</div>
+
+                    <div class="col-5 project_right">
+                        <div class="project" data-toggle="modal" data-target="#HexoModal">
+                            <img src="gray.jpg" class="project_img">
+                        </div>
+
+                    </div>
+                    <div class="col-7 project_name">Movie&Book sharing
+                        <div class="project_skill">Hexo、Node.js</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="HexoModal" tabindex="-1" role="dialog" aria-labelledby="HexoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popUpLeft">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/book.jpg)">
+    
+                                </div>
+                                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/book1.jpg)">
+    
+                                </div>
+                                <!-- <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
+                     
+                    </div> -->
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!-- <img src="img/book.jpg" alt=""> -->
+                    </div>
+                    <div class="popUpRight">
+                        <div class="popUpTitle">Movie&Book sharing</div>
+    
+                        <div class="popUpService">Web Design</div>
+                        <div class="popUpService">Hexo</div>
+                        <div class="popUpService">Node.js</div>
+                        <div class="popUpService">Markdown</div>
+                        運用Hexo網誌框架建置分享電影與書籍的BLOG，新增文章以Markdown功能撰寫，讓網頁能夠流暢瀏覽。
+                        <br>
+                        <br>
+                        <a href="https://bookmad.github.io" target="_blank">
+                            <div class="popUpBtn">LAUNCH WEBSITE</div>
+                        </a>
+                        <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="erpModal" tabindex="-1" role="dialog" aria-labelledby="erpModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popUpLeft">
+                        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/erp1.jpg)">
+    
+                                </div>
+                                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp2.jpg)">
+    
+                                </div>
+                                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
+    
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popUpRight">
+                        <div class="popUpTitle">教育品質管理系統</div>
+                        <div class="popUpService">Web Design</div>
+                        <div class="popUpService">Development</div>
+                        <div class="popUpService">Power BI</div>
+                        <div class="popUpService">Education</div>
+                        運用多個儀錶板分析縣市教育所關心議題，供教育局或學校警覺，本系統為DEMO版本。
+                        <br>
+                        <br>
+                        <a href="http://host02.iiiedu.org.tw/QERP/" target="_blank">
+                            <div class="popUpBtn">LAUNCH WEBSITE</div>
+                        </a>
+                        <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popUpLeft">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/game2.jpg)">
+    
+                                </div>
+                                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game4.jpg)">
+    
+                                </div>
+                                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game5.jpg)">
+                                </div>
+    
+                                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game6.jpg)">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popUpRight">
+                        <div class="popUpTitle">銀髮族健腦平台</div>
+                        <div class="popUpService">Web Design</div>
+                        <div class="popUpService">Development</div>
+                        <div class="popUpService">Power BI</div>
+                        <div class="popUpService">Education</div>
+                        提供多款健腦遊戲供銀髮族活化腦力，並利用遊玩log紀錄建立圖表分析供使用者查看遊玩歷程。
+                        <br>
+                        <br>
+                        <a href="http://mobile.gyrigym.com/" target="_blank">
+                            <div class="popUpBtn">LAUNCH WEBSITE</div>
+                        </a>
+                        <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="gameAdminModal" tabindex="-1" role="dialog" aria-labelledby="gameAdminModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popUpLeft">
+                        <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                                <!-- <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li> -->
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/game_admin.jpg)">
+    
+                                </div>
+                                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/game_admin2.jpg)">
+    
+                                </div>
+                                <!-- <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
+                                 
+                                </div> -->
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popUpRight">
+                        <div class="popUpTitle">銀髮族健腦後台管理系統</div>
+                        <div class="popUpService">Web Design</div>
+                        <div class="popUpService">Development</div>
+                        <div class="popUpService">php</div>
+                        <div class="popUpService">Education</div>
+                        帳號管理停權等
+                        <br>
+                        <br>
+    
+                        <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="DCCModal" tabindex="-1" role="dialog" aria-labelledby="DCCModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popUpLeft">
+                        <img src="img/company1.jpg" alt="">
+                    </div>
+                    <div class="popUpRight">
+                        <div class="popUpTitle">公司部門網站</div>
+                        <div class="popUpService">Web Design</div>
+                        <div class="popUpService">Wordpress</div>
+                        <div class="popUpService">css</div>
+                        以wordpress架設公司中心網站，裡頭使用css與html修改客置頁面。
+                        <br>
+                        <br>
+    
+                        <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="attendanceModal" tabindex="-1" role="dialog" aria-labelledby="attendanceModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popUpLeft">
+                        <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                                <!-- <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li> -->
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/record.jpg)">
+    
+                                </div>
+                                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/record1.jpg)">
+    
+                                </div>
+                                <!-- <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
+                                             
+                                            </div> -->
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popUpRight">
+                        <div class="popUpTitle">學生出缺勤系統</div>
+                        <div class="popUpService">Web Design</div>
+                        <div class="popUpService">php</div>
+                        <div class="popUpService">mysql</div>
+                        <div class="popUpService">html</div>
+                        <div class="popUpService">javascript</div>
+                        供台北影視音實驗學校匯出學生出缺勤紀錄。
+                        <br>
+                        <br>
+    
+                        <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="DCCModal" tabindex="-1" role="dialog" aria-labelledby="DCCModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popUpLeft">
+                        <img src="img/company1.jpg" alt="">
+                    </div>
+                    <div class="popUpRight">
+                        <div class="popUpTitle">公司部門網站</div>
+                        <div class="popUpService">Web Design</div>
+                        <div class="popUpService">Wordpress</div>
+                        <div class="popUpService">css</div>
+                        以wordpress架設公司中心網站，裡頭使用css與html修改客置頁面。
+                        <br>
+                        <br>
+    
+                        <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="vinamModal" tabindex="-1" role="dialog" aria-labelledby="vinamModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popUpLeft">
+                        <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+                                <!-- <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li> -->
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/vinam5.jpg)">
+                                </div>
+                                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/vinam4.jpg)">
+                                </div>
+    
+                                <!-- <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
+                                               
+                                              </div> -->
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popUpRight">
+                        <div class="popUpTitle">越南觀光儀表板</div>
+                        <div class="popUpService">Web Design</div>
+                        <div class="popUpService">html</div>
+                        <div class="popUpService">javascript</div>
+                        <div class="popUpService">morris.js</div>
+                        利用morris.js套件製作各個視覺化圖表。
+                        <br>
+                        <br>
+    
+                        <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="taituneModal" tabindex="-1" role="dialog" aria-labelledby="taituneModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popUpLeft">
+                        <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators7" data-slide-to="2"></li>
+                                <!-- <li data-target="#carouselExampleIndicators7" data-slide-to="2"></li> -->
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item header-carousel-item active bg-cover" style="background-image: url(img/taitune.jpg)">
+                                </div>
+                                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/taitune1.jpg)">
+                                </div>
+                                <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/taitune2.jpg)">
+                                </div>
+                                <!-- <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(img/erp3.jpg)">
+                                                 
+                                                </div> -->
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popUpRight">
+                        <div class="popUpTitle">越南觀光儀表板</div>
+                        <div class="popUpService">Web Design</div>
+                        <div class="popUpService">html</div>
+                        <div class="popUpService">javascript</div>
+                        <div class="popUpService">DataTable</div>
+                        <div class="popUpService">PHP</div>
+                        <div class="popUpService">AJAX</div>
+                        <div class="popUpService">接受JSON資料</div>
+                        供訪客填寫展場問卷，並進而以儀錶板呈現問卷結果，儀錶板本身接華碩雲盒子偵測PM2.5,有接API的功能
+                        <br>
+                        <br>
+    
+                        <button type="button" id="cboxClose" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
