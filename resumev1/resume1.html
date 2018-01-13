@@ -9,121 +9,119 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="all.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/screenfull.js/1.0.4/screenfull.min.js"></script>
     <style>
-        body {
-            font-family: 微軟正黑體 !important;
+    body {
+        font-family: 微軟正黑體 !important;
+    }
+
+    .btn {
+        border-width: 2px;
+    }
+
+    p {
+        color: white;
+    }
+
+    .header-carousel-item {
+        height: 450px;
+    }
+
+    .bg-cover {
+        background-size: contain;
+        background-position: center center;
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .form-control {
+        border-width: 2px;
+    }
+
+    .project_img {
+        width: 100%;
+        height: 130px;
+        cursor: pointer;
+        margin-bottom: 2px;
+        border-top: 3px black solid;
+        border-bottom: 4px red solid;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .project_mainimg {
+        width: 100%;
+        height: 350px;
+    }
+
+    .project_right {
+        height: 150px;
+        margin-bottom: 2px;
+    }
+
+    .project_name {
+        font-weight: bold;
+        color: black;
+    }
+
+    .project_skill {
+        color: gray;
+    }
+
+    .name {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .good {
+
+        font-family: 微軟正黑體;
+        color: gray;
+        margin-bottom: 3px;
+        margin-right: 20px;
+    }
+
+    .media {
+        color: white;
+        margin-bottom: 3px;
+        margin-right: 10px;
+    }
+
+    a.good:hover {
+        color: black;
+    }
+
+    a.gotolink:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+    .form-inline {
+        margin-top: 10px;
+
+        margin-bottom: 10px;
+    }
+
+    .gotolink {
+        float: center;
+        color: gray;
+        background-color: white;
+        border-radius: 20px;
+        margin-left: 7px;
+    }
+
+    @media (min-width: 767px) {
+        .text-md-dark {
+            color: #333;
         }
-
-        .btn {
-            border-width: 2px;
-        }
-
-        p {
-            color: white;
-        }
-
-        .header-carousel-item {
-            height: 450px;
-        }
-
-        .bg-cover {
-            background-size: contain;
-            background-position: center center;
-        }
-
-        .carousel-caption {
-            background-color: rgba(0, 0, 0, .6);
-        }
-
-        .form-control {
-            border-width: 2px;
-        }
-
-        .project_img {
-            width: 100%;
-            height: 130px;
-            cursor: pointer;
-            margin-bottom: 2px;
-            border-top: 3px black solid;
-            border-bottom: 4px red solid;
-            border-left: 0;
-            border-right: 0;
-        }
-
-        .project_mainimg {
-            width: 100%;
-            height: 350px;
-        }
-
-        .project_right {
-            height: 150px;
-            margin-bottom: 2px;
-        }
-
-        .project_name {
-            font-weight: bold;
-            color: black;
-        }
-
-        .project_skill {
-            color: gray;
-        }
-
-        .name {
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-        .good {
-
-            font-family: 微軟正黑體;
-            color: gray;
-            margin-bottom: 3px;
-            margin-right: 20px;
-        }
-
-        .media {
-            color: white;
-            margin-bottom: 3px;
-            margin-right: 10px;
-        }
-
-        a.good:hover {
-            color: black;
-        }
-
-        a.gotolink:hover {
-            text-decoration: none;
-            color: black;
-        }
-
-        .form-inline {
-            margin-top: 10px;
-
-            margin-bottom: 10px;
-        }
-
-        .gotolink {
-            float: center;
-            color: gray;
-            background-color: white;
-            border-radius: 20px;
-            margin-left: 7px;
-        }
-
-        @media (min-width: 767px) {
-            .text-md-dark {
-                color: #333;
-            }
-        }
+    }
     </style>
 </head>
 
@@ -133,8 +131,7 @@
             <a class="navbar-brand" href="#">
                 <img src="logo.png" alt="" style="height:30px">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -146,8 +143,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <div class="input-group">
-                            <input style="width: 800px" type="text" class="form-control" placeholder="I'm the people you want to search." aria-label="Me"
-                                aria-describedby="basic-addon2">
+                            <input style="width: 800px" type="text" class="form-control" placeholder="I'm the people you want to search." aria-label="Me" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn " type="button">
                                     <i class="fa fa-search fa-1x" aria-hidden="true"></i>
@@ -167,86 +163,71 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-sm-12 p-4">
-
-
                 <div class="popUpLeft" id="popUpLeft">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li id="carousel_1" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                             <li id="carousel_2" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-
                         </ol>
                         <a id="gotolink1" href="https://bookmad.github.io" class="link" data-tooltip="前往連結">
                             <i class="fa fa-link " aria-hidden="true"></i>
                         </a>
                         <div class="carousel-inner">
-
-
-
                             <div class="carousel-item header-carousel-item active bg-cover" id="main_img1" style="background-image: url(img/book.jpg)">
                             </div>
-
                             <div class="carousel-item header-carousel-item bg-cover" id="main_img2" style="background-image: url(img/book1.jpg)">
                             </div>
                             <div class="carousel-item header-carousel-item bg-cover" id="main_img3" style="background-image: url(img/book2.jpg)">
                             </div>
-
                             <div class="carousel-caption d-none d-md-block">
                                 <h3 id="main_project_name">Movie&Book sharing</h3>
-
                                 <p id="main_project_content">
                                     運用Hexo網誌框架建置分享電影與書籍的BLOG，新增文章以Markdown功能撰寫，讓網頁能夠流暢瀏覽。
                                 </p>
-
                             </div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-danger" style="width:75%"></div>
+                            <div id="progress_bar" class="progress-bar bg-danger" style="width:33%"></div>
                         </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prevd" aria-hidden="true">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-nexd" aria-hidden="true">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </span>
+                            <span class="sr-only">Next</span>
+                        </a>
                         <form class="form-inline" style="color:white">
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                <span class="carousel-control-prevd" aria-hidden="true">
-                                    <i class="fa fa-fast-backward" aria-hidden="true"></i>
-                                </span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <!-- <a class="carousel-control-pause" href="#carouselExampleIndicators" role="button" data-slide="pause">
-                                    <span class="carousel-control-pause" aria-hidden="true">
-                                        <i class="fa fa-pause" aria-hidden="true"></i>
-                                    </span>
-                                    <span class="sr-only">Pause</span>
-                                </a> -->
-
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                <span class="carousel-control-nexd" aria-hidden="true">
-                                    <i class="fa fa-fast-forward" aria-hidden="true"></i>
-                                </span>
-                                <span class="sr-only">Next</span>
-                            </a>
                             <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <div class="times"></div>
+                                <li>
+                                    <button id="play1Button" type="button" class="play_list" href="#carouselExampleIndicators" role="button" data-slide="prev" style="outline: none;" data-tooltip="下一張">
+                                        <i class="fa fa-fast-backward fa-1x mr-2" aria-hidden="true" style="margin-left:70px"></i>
+                                    </button>
+                                    <button id="pause2Button" type="button" class="play_list" href="#carouselExampleIndicators" role="button" data-slide="next" style="outline: none;" data-tooltip="上一張">
+                                        <i class="fa fa-fast-forward fa-1x mr-2" aria-hidden="true"></i>
+                                    </button>
+                                    <button id="playButton" type="button" class="play_list" style="outline: none;" data-tooltip="播放">
+                                        <i class="fa fa-play fa-1x mr-2" aria-hidden="true"></i>
+                                    </button>
+                                    <button id="pauseButton" type="button" class="play_list" style="outline: none;" data-tooltip="暫停">
+                                        <i class="fa fa-pause fa-1x mr-2" aria-hidden="true"></i>
+                                    </button>
                                 </li>
                             </ul>
                             <form class="form-inline" style="margin-top:5px">
                                 <a href="#" class="media" data-tooltip="設定">
                                     <i class="fa fa-cog fa-1x mr-2" aria-hidden="true"></i>
                                 </a>
-                                <!--                                     
-                                    <div>
-                                        
-                                        <button id="imageFullScreen">
-                                            將圖片全螢幕顯示
-                                        </button>
-                                       
-                                    </div> -->
                                 <a href="#" id="fullScreen" class="media" data-tooltip="全螢幕">
                                     <i class="fa fa-desktop fa-1x mr-2" aria-hidden="true"></i>
                                 </a>
-                                <a href="#" class="media">
-                                    <i id="cancelFullScreen" class="fa fa-compress fa-1x mr-2 " aria-hidden="true"></i>
+                                <a href="#" id="cancelFullScreen" class="media" data-tooltip="縮小螢幕">
+                                    <i class="fa fa-compress fa-1x mr-2 " aria-hidden="true"></i>
                                 </a>
                             </form>
                         </form>
@@ -261,9 +242,6 @@
                     </div>
                     <!-- <img src="img/book.jpg" alt=""> -->
                 </div>
-
-
-
                 <div class="name"> 曾詩穎 - Be a good programmer</div>
                 <form class="form-inline" style="border-bottom: 1px gray solid;">
                     <ul class="navbar-nav mr-auto">
@@ -450,121 +428,157 @@
         </div>
     </div>
     <script>
+    // $("#carouselExampleIndicators").on('slid.bs.carousel', function () {
+    //     var newId = $(this).find('li.active').attr('data-slide-to');
+    //     if (newId == 0) {
+    //         console.log("dw");
+    //     }
+    // });
 
+    $("#book").click(function() {
 
-        $("#book").click(function () {
+        document.getElementById("main_img1").style.backgroundImage = "url('img/book.jpg')";
+        document.getElementById("main_img2").style.backgroundImage = "url('img/book1.jpg')";
+        document.getElementById("main_img3").style.backgroundImage = "url('img/book2.jpg')";
+        document.getElementById("gotolink1").href = "https://bookmad.github.io";
 
-            document.getElementById("main_img1").style.backgroundImage = "url('img/book.jpg')";
-            document.getElementById("main_img2").style.backgroundImage = "url('img/book1.jpg')";
-            document.getElementById("main_img3").style.backgroundImage = "url('img/book2.jpg')";
-            document.getElementById("gotolink1").href = "https://bookmad.github.io";
+        document.getElementById("main_project_name").innerHTML = "Movie&Book sharing";
+        document.getElementById("main_project_content").innerHTML = "運用Hexo網誌框架建置分享電影與書籍的BLOG，新增文章以Markdown功能撰寫，讓網頁能夠流暢瀏覽。";
 
-            document.getElementById("main_project_name").innerHTML = "Movie&Book sharing";
-            document.getElementById("main_project_content").innerHTML = "運用Hexo網誌框架建置分享電影與書籍的BLOG，新增文章以Markdown功能撰寫，讓網頁能夠流暢瀏覽。";
-
-        });
-        $("#erp").click(function () {
-            document.getElementById("main_img1").style.backgroundImage = "url('img/erp.jpg')";
-            document.getElementById("main_img2").style.backgroundImage = "url('img/erp1.jpg')";
-            document.getElementById("main_img3").style.backgroundImage = "url('img/erp2.jpg')";
-            document.getElementById("gotolink1").href = "http://host02.iiiedu.org.tw/QERP/";
-            document.getElementById("main_project_name").innerHTML = "教育品質管理系統";
-            document.getElementById("main_project_content").innerHTML = " 運用多個儀錶板分析縣市教育所關心議題，供教育局或學校警覺，本系統為DEMO版本。";
-        });
-        $("#game").click(function () {
-            document.getElementById("main_img1").style.backgroundImage = "url('img/game1.jpg')";
-            document.getElementById("main_img2").style.backgroundImage = "url('img/game4.jpg')";
-            document.getElementById("main_img3").style.backgroundImage = "url('img/game5.jpg')";
-            document.getElementById("gotolink1").href = "http://mobile.gyrigym.com/";
-            document.getElementById("main_project_name").innerHTML = "銀髮族健腦平台";
-            document.getElementById("main_project_content").innerHTML = " 提供多款健腦遊戲供銀髮族活化腦力，並利用遊玩log紀錄建立圖表分析供使用者查看遊玩歷程。";
-        });
-        $("#gameadmin").click(function () {
-            document.getElementById("main_img1").style.backgroundImage = "url('img/game_admin.jpg')";
-            document.getElementById("main_img2").style.backgroundImage = "url('img/game_admin2.jpg')";
-            document.getElementById("main_img3").style.backgroundImage = "url('img/game_admin3.jpg')";
-            document.getElementById("gotolink1").href = "";
-            document.getElementById("main_project_name").innerHTML = "銀髮族健腦後台管理系統";
-            document.getElementById("main_project_content").innerHTML = " 帳號管理停權等";
-        });
-        $("#dcc").click(function () {
-            document.getElementById("main_img1").style.backgroundImage = "url('img/company1.jpg')";
-            document.getElementById("main_img2").style.backgroundImage = "url('img/company2.jpg')";
-            document.getElementById("main_img3").style.backgroundImage = "url('img/company3.jpg')";
-            document.getElementById("gotolink1").href = "";
-            document.getElementById("main_project_name").innerHTML = "公司部門網站";
-            document.getElementById("main_project_content").innerHTML = " 以wordpress架設公司中心網站，裡頭使用css與html修改客置頁面。";
-        });
-        $("#attendance").click(function () {
-            document.getElementById("main_img1").style.backgroundImage = "url('img/record.jpg')";
-            document.getElementById("main_img2").style.backgroundImage = "url('img/record2.jpg')";
-            document.getElementById("main_img3").style.backgroundImage = "url('img/record1.jpg')";
-            document.getElementById("gotolink1").href = "";
-            document.getElementById("main_project_name").innerHTML = "學生出缺勤系統";
-            document.getElementById("main_project_content").innerHTML = " 供台北影視音實驗學校匯出學生出缺勤紀錄。";
-        });
-        $("#vinam").click(function () {
-            document.getElementById("main_img1").style.backgroundImage = "url('img/vinam5.jpg')";
-            document.getElementById("main_img2").style.backgroundImage = "url('img/vinam4.jpg')";
-            document.getElementById("main_img3").style.backgroundImage = "url('img/vinam2.jpg')";
-            document.getElementById("gotolink1").href = "";
-            document.getElementById("main_project_name").innerHTML = "越南觀光儀表板";
-            document.getElementById("main_project_content").innerHTML = " 利用morris.js套件製作各個視覺化圖表。";
-        });
-        $("#taitune").click(function () {
-            document.getElementById("main_img1").style.backgroundImage = "url('img/taitune.jpg')";
-            document.getElementById("main_img2").style.backgroundImage = "url('img/taitune1.jpg')";
-            document.getElementById("main_img3").style.backgroundImage = "url('img/taitune2.jpg')";
-            document.getElementById("gotolink1").href = "";
-            document.getElementById("main_project_name").innerHTML = "公司部門展示廳訪客問卷";
-            document.getElementById("main_project_content").innerHTML = " 供訪客填寫展場問卷，並進而以儀錶板呈現問卷結果，儀錶板本身接華碩雲盒子偵測PM2.5,有接API的功能";
-        });
+    });
+    $("#erp").click(function() {
+        document.getElementById("main_img1").style.backgroundImage = "url('img/erp.jpg')";
+        document.getElementById("main_img2").style.backgroundImage = "url('img/erp1.jpg')";
+        document.getElementById("main_img3").style.backgroundImage = "url('img/erp2.jpg')";
+        document.getElementById("gotolink1").href = "http://host02.iiiedu.org.tw/QERP/";
+        document.getElementById("main_project_name").innerHTML = "教育品質管理系統";
+        document.getElementById("main_project_content").innerHTML = " 運用多個儀錶板分析縣市教育所關心議題，供教育局或學校警覺，本系統為DEMO版本。";
+    });
+    $("#game").click(function() {
+        document.getElementById("main_img1").style.backgroundImage = "url('img/game1.jpg')";
+        document.getElementById("main_img2").style.backgroundImage = "url('img/game4.jpg')";
+        document.getElementById("main_img3").style.backgroundImage = "url('img/game5.jpg')";
+        document.getElementById("gotolink1").href = "http://mobile.gyrigym.com/";
+        document.getElementById("main_project_name").innerHTML = "銀髮族健腦平台";
+        document.getElementById("main_project_content").innerHTML = " 提供多款健腦遊戲供銀髮族活化腦力，並利用遊玩log紀錄建立圖表分析供使用者查看遊玩歷程。";
+    });
+    $("#gameadmin").click(function() {
+        document.getElementById("main_img1").style.backgroundImage = "url('img/game_admin.jpg')";
+        document.getElementById("main_img2").style.backgroundImage = "url('img/game_admin2.jpg')";
+        document.getElementById("main_img3").style.backgroundImage = "url('img/game_admin3.jpg')";
+        document.getElementById("gotolink1").href = "";
+        document.getElementById("main_project_name").innerHTML = "銀髮族健腦後台管理系統";
+        document.getElementById("main_project_content").innerHTML = " 帳號管理停權等";
+    });
+    $("#dcc").click(function() {
+        document.getElementById("main_img1").style.backgroundImage = "url('img/company1.jpg')";
+        document.getElementById("main_img2").style.backgroundImage = "url('img/company2.jpg')";
+        document.getElementById("main_img3").style.backgroundImage = "url('img/company3.jpg')";
+        document.getElementById("gotolink1").href = "";
+        document.getElementById("main_project_name").innerHTML = "公司部門網站";
+        document.getElementById("main_project_content").innerHTML = " 以wordpress架設公司中心網站，裡頭使用css與html修改客置頁面。";
+    });
+    $("#attendance").click(function() {
+        document.getElementById("main_img1").style.backgroundImage = "url('img/record.jpg')";
+        document.getElementById("main_img2").style.backgroundImage = "url('img/record2.jpg')";
+        document.getElementById("main_img3").style.backgroundImage = "url('img/record1.jpg')";
+        document.getElementById("gotolink1").href = "";
+        document.getElementById("main_project_name").innerHTML = "學生出缺勤系統";
+        document.getElementById("main_project_content").innerHTML = " 供台北影視音實驗學校匯出學生出缺勤紀錄。";
+    });
+    $("#vinam").click(function() {
+        document.getElementById("main_img1").style.backgroundImage = "url('img/vinam5.jpg')";
+        document.getElementById("main_img2").style.backgroundImage = "url('img/vinam4.jpg')";
+        document.getElementById("main_img3").style.backgroundImage = "url('img/vinam2.jpg')";
+        document.getElementById("gotolink1").href = "";
+        document.getElementById("main_project_name").innerHTML = "越南觀光儀表板";
+        document.getElementById("main_project_content").innerHTML = " 利用morris.js套件製作各個視覺化圖表。";
+    });
+    $("#taitune").click(function() {
+        document.getElementById("main_img1").style.backgroundImage = "url('img/taitune.jpg')";
+        document.getElementById("main_img2").style.backgroundImage = "url('img/taitune1.jpg')";
+        document.getElementById("main_img3").style.backgroundImage = "url('img/taitune2.jpg')";
+        document.getElementById("gotolink1").href = "";
+        document.getElementById("main_project_name").innerHTML = "公司部門展示廳訪客問卷";
+        document.getElementById("main_project_content").innerHTML = " 供訪客填寫展場問卷，並進而以儀錶板呈現問卷結果，儀錶板本身接華碩雲盒子偵測PM2.5,有接API的功能";
+    });
     </script>
     </script>
     <script>
-        $(document).ready(function () {
-            $('#fullScreenSupport').html(
-                screenfull.enabled
-                    ? ''
-                    : '');
+    $('#playButton').click(function() {
+        $('#carouselExampleIndicators').carousel('cycle');
+    });
+    $('#pauseButton').click(function() {
+        $('#carouselExampleIndicators').carousel('pause');
+    });
+    $(function() {
+        var active = '';
+        var next = null;
+        var second= 1;
+        $('#carouselExampleIndicators').on('slide.bs.carousel', function() {
+            $('.carousel-indicators li').each(function() {
+                if ($(this).hasClass('active')) {
+                    active = $(this).data('slide-to');
+                    console.log(active);
+                    if (active == 0 || (active==0 && second ==1 ) ){
+                        document.getElementById("progress_bar").style.width = "33%";
+                        second= second+1;
+                    } else if (active == 1) {
+                        document.getElementById("progress_bar").style.width = "66%";
+                    } else {
+                        document.getElementById("progress_bar").style.width = "100%";
+                    }
+                    next = $(this).next('li').data('slide-to');
+                }
+            });
+            //    console.log(active);
+            //  if (active == 0) {
+            //             document.getElementById("progress_bar").style.width = "33%";
+            //         }else if(active == 1){
+            //             document.getElementById("progress_bar").style.width = "66%";
+            //         }else{
+            //             document.getElementById("progress_bar").style.width = "100%";
+            //         }
         });
+    });
 
-        // $('#fullScreen').click(function () {
-        //     if (screenfull.enabled) {
-        //         screenfull.request();
-        //     }
-        // });
+    //  $("#carouselExampleIndicators").on('slide.bs.carousel', function () {
+    //         var newId = $(this).find('li.active').attr('data-slide-to');
+    //         if (newId == 0) {
+    //             document.getElementById("progress_bar").style.width = "33%";
+    //         }else if(newId == 1){
+    //             document.getElementById("progress_bar").style.width = "66%";
+    //         }else{
+    //             document.getElementById("progress_bar").style.width = "100%";
+    //         }
+    //     });
 
-        $('#fullScreen').click(function () {
+
+    $('#fullScreen').click(function() {
 
 
-            if (screenfull.enabled) {
-                document.getElementById("main_img1").style.height = "600px";
-                document.getElementById("main_img2").style.height = "600px";
-                document.getElementById("main_img3").style.height = "600px";
-                screenfull.request(document.getElementById("popUpLeft"));
-            }
-        });
+        if (screenfull.enabled) {
+            document.getElementById("main_img1").style.height = "600px";
+            document.getElementById("main_img2").style.height = "600px";
+            document.getElementById("main_img3").style.height = "600px";
+            screenfull.request(document.getElementById("popUpLeft"));
+        }
+    });
 
-        $('#cancelFullScreen').click(function () {
-            if (screenfull.enabled) {
-                document.getElementById("main_img1").style.height = "450px";
-                document.getElementById("main_img2").style.height = "450px";
-                document.getElementById("main_img3").style.height = "450px";
-                screenfull.exit();
-            }
-        });
-
+    $('#cancelFullScreen').click(function() {
+        if (screenfull.enabled) {
+            document.getElementById("main_img1").style.height = "450px";
+            document.getElementById("main_img2").style.height = "450px";
+            document.getElementById("main_img3").style.height = "450px";
+            screenfull.exit();
+        }
+    });
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
 </html>

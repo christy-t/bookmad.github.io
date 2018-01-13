@@ -125,6 +125,8 @@ section {
     -ms-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
+
+
 .job {
     color: red;
     display: inline;
@@ -257,7 +259,20 @@ section {
     outline: 0;
 }
 
-.carousel-indicators active {
+.progress {
+    
+    height: 0.5rem !important;
+    
+    border-radius: 0rem !important;
+}
+
+.play_list {
+   background-color: black;
+   color:white;
+   outline:none;
+   cursor: pointer;
+}
+ .carousel-indicators active {
 
     background-color: #dc3545 !important;
 }
@@ -275,15 +290,15 @@ section {
 .carousel-control-next-icon {
 
     background-color: white !important;
+} 
+
+.carousel-indicators {
+   
+    display: none !important;
+   
 }
 
-.progress {
-    
-    height: 0.5rem !important;
-    
-    border-radius: 0rem !important;
-}
-
+/*
 .carousel-control-prev {
     float: left !important;
     top: 95%;
@@ -294,19 +309,22 @@ section {
     float: left !important;
     margin-left: 70px;
     right: auto !important;
-    top: 95%;
+    top: 95% !important;
     color: white !important;
 }
 
 
 .carousel-control-pause {
-    float: left !important;
-    margin-left: 47px;
+   float: left !important;
+    margin-left: 55px;
     right: auto !important;
-    top: 79%;
+    top: 95%;
     color: white !important;
+}*/
+
+.carousel-control-next, .carousel-control-prev {
     position: absolute;
-    
+    top: 0;
     bottom: 0;
     display: -ms-flexbox;
     display: flex;
@@ -314,11 +332,12 @@ section {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    
+    width: 5%;
     color: #fff;
     text-align: center;
     opacity: .5;
-}
+} 
+
 .carousel-indicators {
     
     bottom: 18px !important;
