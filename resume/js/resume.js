@@ -143,3 +143,7 @@
          });
     });
 
+        $('#like').on('click',function(){
+            
+              $(this).html(Number($(this).html()) + 1);
+            });
