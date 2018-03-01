@@ -4,7 +4,7 @@
             document.getElementById("main_img1").style.backgroundImage = "url('img/book.jpg')";
             document.getElementById("main_img2").style.backgroundImage = "url('img/book1.jpg')";
             document.getElementById("main_img3").style.backgroundImage = "url('img/book2.jpg')";
-            document.getElementById("gotolink1").href = "https://bookmad.github.io";
+            
 
             document.getElementById("main_project_name").innerHTML = "Movie&Book sharing";
             document.getElementById("main_project_content").innerHTML = "運用Hexo網誌框架建置分享電影與書籍的BLOG，新增文章以Markdown功能撰寫，讓網頁能夠流暢瀏覽。";
@@ -14,7 +14,7 @@
             document.getElementById("main_img1").style.backgroundImage = "url('img/erp.jpg')";
             document.getElementById("main_img2").style.backgroundImage = "url('img/erp1.jpg')";
             document.getElementById("main_img3").style.backgroundImage = "url('img/erp2.jpg')";
-            document.getElementById("gotolink1").href = "http://host02.iiiedu.org.tw/QERP/";
+           
             document.getElementById("main_project_name").innerHTML = "教育品質管理系統";
             document.getElementById("main_project_content").innerHTML = " 運用多個儀錶板分析縣市教育所關心議題，供教育局或學校警覺，本系統為DEMO版本。";
         });
@@ -22,15 +22,15 @@
             document.getElementById("main_img1").style.backgroundImage = "url('img/game1.jpg')";
             document.getElementById("main_img2").style.backgroundImage = "url('img/game4.jpg')";
             document.getElementById("main_img3").style.backgroundImage = "url('img/game5.jpg')";
-            document.getElementById("gotolink1").href = "http://mobile.gyrigym.com/";
+           
             document.getElementById("main_project_name").innerHTML = "銀髮族健腦平台";
-            document.getElementById("main_project_content").innerHTML = " 提供多款健腦遊戲供銀髮族活化腦力，並利用遊玩log紀錄建立圖表分析供使用者查看遊玩歷程。";
+            document.getElementById("main_project_content").innerHTML = " 開發多款健腦遊戲供銀髮族活化腦力，並利用遊玩紀錄建立圖表分析供使用者查看遊玩歷程。 測試帳號/密碼:tt001/tt001";
         });
         $("#gameadmin").click(function () {
             document.getElementById("main_img1").style.backgroundImage = "url('img/game_admin.jpg')";
             document.getElementById("main_img2").style.backgroundImage = "url('img/game_admin2.jpg')";
             document.getElementById("main_img3").style.backgroundImage = "url('img/game_admin3.jpg')";
-            document.getElementById("gotolink1").href = "";
+           
             document.getElementById("main_project_name").innerHTML = "銀髮族健腦後台管理系統";
             document.getElementById("main_project_content").innerHTML = " 帳號管理停權等";
         });
@@ -38,15 +38,15 @@
             document.getElementById("main_img1").style.backgroundImage = "url('img/company1.jpg')";
             document.getElementById("main_img2").style.backgroundImage = "url('img/company2.jpg')";
             document.getElementById("main_img3").style.backgroundImage = "url('img/company3.jpg')";
-            document.getElementById("gotolink1").href = "";
+           
             document.getElementById("main_project_name").innerHTML = "公司部門網站";
-            document.getElementById("main_project_content").innerHTML = " 以wordpress架設公司中心網站，裡頭使用css與html修改客置頁面。";
+            document.getElementById("main_project_content").innerHTML = " 以wordpress架設公司中心網站，裡頭使用css與html修改客制頁面。";
         });
         $("#attendance").click(function () {
             document.getElementById("main_img1").style.backgroundImage = "url('img/record.jpg')";
             document.getElementById("main_img2").style.backgroundImage = "url('img/record2.jpg')";
             document.getElementById("main_img3").style.backgroundImage = "url('img/record1.jpg')";
-            document.getElementById("gotolink1").href = "";
+           
             document.getElementById("main_project_name").innerHTML = "學生出缺勤系統";
             document.getElementById("main_project_content").innerHTML = " 供台北影視音實驗學校匯出學生出缺勤紀錄。";
         });
@@ -54,7 +54,7 @@
             document.getElementById("main_img1").style.backgroundImage = "url('img/vinam5.jpg')";
             document.getElementById("main_img2").style.backgroundImage = "url('img/vinam4.jpg')";
             document.getElementById("main_img3").style.backgroundImage = "url('img/vinam2.jpg')";
-            document.getElementById("gotolink1").href = "";
+           
             document.getElementById("main_project_name").innerHTML = "越南觀光儀表板";
             document.getElementById("main_project_content").innerHTML = " 利用morris.js套件製作各個視覺化圖表。";
         });
@@ -62,7 +62,7 @@
             document.getElementById("main_img1").style.backgroundImage = "url('img/taitune.jpg')";
             document.getElementById("main_img2").style.backgroundImage = "url('img/taitune1.jpg')";
             document.getElementById("main_img3").style.backgroundImage = "url('img/taitune2.jpg')";
-            document.getElementById("gotolink1").href = "";
+            
             document.getElementById("main_project_name").innerHTML = "公司部門展示廳訪客問卷";
             document.getElementById("main_project_content").innerHTML = " 供訪客填寫展場問卷，並進而以儀錶板呈現問卷結果，儀錶板本身接華碩雲盒子偵測PM2.5,有接API的功能";
         });

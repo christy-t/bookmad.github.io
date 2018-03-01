@@ -1,4 +1,4 @@
-**曾詩穎 (Shih-Ying Tseng )**  
+﻿**曾詩穎 (Shih-Ying Tseng )**  
 -------- 
 * [個人網站](https://bookmad.github.io/resume/)    
 * Email: shihying3@gmail.com  
@@ -15,7 +15,7 @@
     +  有效掌握 JavaScript 基本語法操控網頁元素完成互動效果
     +  能夠運用jQuery Plugin(screenfull、datatable、owl.carousel、Alertify、complexify etc.) 及 jQuery UI 開發互動功能 及 jQuery UI 開發互動功能
     +  使用 Ajax 串接後端 API 資料 及 撈取各種 Open Data 資料，並即時呈現至網頁中  
-* PHP/MySql
+* PHP/SQL
     + 運用php串接資料邏輯鍊的能力，並利用 Ajax 串接 API 存取資料庫
 * 資料視覺化
     + 熟悉Microsoft PowerBI 視覺化工具將資料視覺化
@@ -48,4 +48,7 @@
     + 以CSS進度調功能供訪客下一步填寫
     + 以PHP、AJAX新增資料
     +  共三個平台供展示場地進行問卷調查與帳號查詢，並製作儀錶板觀看遊玩人數與遊玩紀錄。
+* 個人網站
+    + 使用CSS & bootstrap仿刻youtube網站
+    + 使用jQuery添加網頁互動性
 --- 

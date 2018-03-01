@@ -22,7 +22,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-white border">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="" style="height:30px">
@@ -32,15 +33,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="row" style="width:100%">
+                    <div class="col-md-10 col-sm-12">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">首頁
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
+                  
+                    <li class="nav-item dropdown" style="width:100%">
                         <div class="input-group">
-                            <input style="width: 800px" type="text" class="form-control" placeholder="I'm the people you want to search." aria-label="Me"
+                            <input style="width: 100%" type="text" class="form-control" placeholder="I'm the people you want to search." aria-label="Me"
                                 aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn " type="button">
@@ -49,12 +48,14 @@
                             </div>
                         </div>
                     </li>
-                </ul>
+                </ul></div>
+                <div class="col-md-2 col-sm-12">
                 <form class="form-inline">
                     <a href="曾詩穎_履歷.pdf" style=" font-family: 微軟正黑體;color:gray; ">
                         <i class="fa fa-download fa-1x" aria-hidden="true"></i>下載履歷</a>
                     <!-- <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">註冊</a> -->
-                </form>
+                </form></div>
+            </div>
             </div>
         </div>
     </nav>
@@ -74,17 +75,17 @@
                         </ol>
                       
                         <div class="carousel-inner">
-                            <div class="carousel-item header-carousel-item active bg-cover" id="main_img1" style="background-image: url(img/book.jpg)">
+                            <div class="carousel-item header-carousel-item active bg-cover" id="main_img1" style="background-image: url(img/game1.jpg)">
                             </div>
-                            <div class="carousel-item header-carousel-item bg-cover" id="main_img2" style="background-image: url(img/book1.jpg)">
+                            <div class="carousel-item header-carousel-item bg-cover" id="main_img2" style="background-image: url(img/game4.jpg)">
                             </div>
-                            <div class="carousel-item header-carousel-item bg-cover" id="main_img3" style="background-image: url(img/book2.jpg)">
+                            <div class="carousel-item header-carousel-item bg-cover" id="main_img3" style="background-image: url(img/game5.jpg)">
                             </div>
                             <div class="carousel-caption d-none d-md-block">
-                                <h3 id="main_project_name">Movie&Book sharing</h3>
+                                <h3 id="main_project_name">銀髮族健腦平台</h3>
 
                                 <p id="main_project_content">
-                                    運用Hexo網誌框架建置分享電影與書籍的BLOG，新增文章以Markdown功能撰寫，讓網頁能夠流暢瀏覽。
+                                    開發多款健腦遊戲供銀髮族活化腦力，並利用遊玩紀錄建立圖表分析供使用者查看遊玩歷程。。
                                 </p>
 
                             </div>
@@ -173,7 +174,7 @@
                         <div class="project_name" data-tooltip="我有自己的音樂部落格">
                             <a href="http://musicmad.gowp.space/" style="color:black">曾詩穎 Shih-Ying Tseng</a>
                         </div>
-                        <div class="school" style="margin-bottom: 3px">Email: shihying3@gmail.com</div>
+                        <div class="school" style="margin-bottom: 3px">Email: cholihi1210@gmail.com</div>
                         <div class="my-auto">
                             <h3 class="mb-3">學歷</h3>
                             <div class="mb-3">
@@ -181,6 +182,7 @@
                                 <div class="school"> 學士: 國立海洋大學(資訊工程學系)</div>
                             </div>
                         </div>
+                         
                         <div class="my-auto">
                             <h3 class="mb-3">技能</h3>
                             <ul class="ulstyle">
@@ -197,10 +199,9 @@
                                         <li>使用 Ajax 串接後端 API 資料 及 撈取各種 Open Data 資料，並即時呈現至網頁中</li>                                       
                                     </ul>
                                 </li>
-                                <li>PHP/MySql
+                                <li>PHP/SQL
                                     <ul class="ulstyle">
-                                        <li>運用php串接資料邏輯鍊的能力，了解 SQL 語法及資料庫運用</li>
-                                        
+                                        <li>運用php串接資料邏輯鍊的能力，了解 SQL 語法及資料庫運用</li>                                       
                                     </ul>
                                 </li>
                                 <li>資料視覺化
@@ -244,7 +245,7 @@
                                     </li>
                                     <li>出缺勤系統
                                         <ul class="ulstyle">
-                                            <li>後端使用PHP撈取Mysql資料供台北影視音學校匯出每季學生出席紀錄</li>
+                                            <li>後端使用PHP撈取MySQL資料供台北影視音學校匯出每季學生出席紀錄</li>
                                         </ul>
                                     </li>
                                     <li>越南觀光DEMO平台
@@ -262,6 +263,12 @@
                                             <li>以CSS進度調功能供訪客下一步填寫</li>
                                             <li>以PHP、AJAX新增資料</li>
                                             <li>共三個平台供展示場地進行問卷調查與帳號查詢，並製作儀錶板觀看遊玩人數與遊玩紀錄。</li>
+                                        </ul>
+                                    </li>
+                                    <li>個人網站
+                                        <ul class="ulstyle">
+                                            <li>使用CSS & bootstrap仿刻youtube網站</li>
+                                            <li>使用jQuery添加網頁互動性</li>
                                         </ul>
                                     </li>
                             </div>
@@ -287,7 +294,7 @@
                         </div>
                     </div>
                     <div class="col-6 project_name"><a href="http://host02.iiiedu.org.tw/QERP/">教育品質管理系統</a>
-                        <div class="project_skill">HTML、PHP、bootstrap、Javascript、PowerBI、MySql</div>
+                        <div class="project_skill">HTML、PHP、Bootstrap、Javascript、PowerBI、MySQL</div>
                     </div>
                     <div class="col-6 project_right">
                         <div class="project">
@@ -295,7 +302,7 @@
                         </div>
                     </div>
                     <div class="col-6 project_name"><a href="http://mobile.gyrigym.com/">銀髮族健腦平台</a>
-                        <div class="project_skill">HTML5、PHP、bootstrap、Javascript、MySql</div>
+                        <div class="project_skill">HTML5、PHP、Bootstrap、JavaScript、MySQL</div>
                     </div>
                     <div class="col-6 project_right">
                         <div class="project">
@@ -303,7 +310,7 @@
                         </div>
                     </div>
                     <div class="col-6 project_name">銀髮族健腦後台管理系統
-                        <div class="project_skill">HTML5、PHP、bootstrap、Javascript、MySql</div>
+                        <div class="project_skill">HTML5、PHP、Bootstrap、JavaScript、MySQL</div>
                     </div>
                     <div class="col-6 project_right">
                         <div class="project">
@@ -319,7 +326,7 @@
                         </div>
                     </div>
                     <div class="col-6 project_name">學生出缺勤系統
-                        <div class="project_skill">HTML、PHP、Javascript、MySql</div>
+                        <div class="project_skill">HTML、PHP、JavaScript、MySQL</div>
                     </div>
                     <div class="col-6 project_right">
                         <div class="project">
@@ -327,7 +334,7 @@
                         </div>
                     </div>
                     <div class="col-6 project_name">越南觀光DEMO平台
-                        <div class="project_skill">HTML、Javascript、Morris.js</div>
+                        <div class="project_skill">HTML、JavaScript、Morris.js</div>
                     </div>
                     <div class="col-6 project_right">
                         <div class="project">
@@ -335,7 +342,7 @@
                         </div>
                     </div>
                     <div class="col-6 project_name">公司展示場地問卷調查
-                        <div class="project_skill">HTML、Javascript、PHP、AJAX、PowerBI</div>
+                        <div class="project_skill">HTML、JavaScript、PHP、AJAX、PowerBI</div>
                     </div>
                 </div>
             </div>

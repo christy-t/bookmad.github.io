@@ -8,6 +8,10 @@ h4 {
     font-family: 微軟正黑體 !important;
 }
 
+.container {
+    font-family: 微軟正黑體 !important;
+}
+
 #page-top {
     font-family: 微軟正黑體 !important;
 }
@@ -245,6 +249,7 @@ section {
     -moz-border-top-left-radius: 5px;
     border-top-left-radius: 5px;
 }
+
 
 @import "compass/css3";
 
