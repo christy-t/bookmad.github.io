@@ -1,7 +1,7 @@
 ﻿**曾詩穎 (Shih-Ying Tseng )**  
 -------- 
 * [個人網站](https://bookmad.github.io/resume/)    
-* Email: shihying3@gmail.com  
+* Email: cholihi1210@gmail.com  
 * 學歷
     + 碩士: 國立中央大學(資訊工程學系)  
     + 學士: 國立海洋大學(資訊工程學系)  
