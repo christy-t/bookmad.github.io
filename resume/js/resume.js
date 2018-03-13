@@ -16,7 +16,7 @@
             document.getElementById("main_img3").style.backgroundImage = "url('img/erp2.jpg')";
            
             document.getElementById("main_project_name").innerHTML = "教育品質管理系統";
-            document.getElementById("main_project_content").innerHTML = "透過儀錶板幫助政府隨時掌握學校辦理績效成果與教師的教育品質，進而了解學生學習成效影響因素後給予補助及加強欠缺面相。";
+            document.getElementById("main_project_content").innerHTML = "透過分析數據表幫助政府隨時掌握學校辦理績效成果與教師的教育品質，進而了解學生學習成效影響因素後給予補助及加強欠缺面相。";
         });
         $("#game").click(function () {
             document.getElementById("main_img1").style.backgroundImage = "url('img/game1.jpg')";
@@ -55,8 +55,8 @@
             document.getElementById("main_img2").style.backgroundImage = "url('img/vinam4.jpg')";
             document.getElementById("main_img3").style.backgroundImage = "url('img/vinam2.jpg')";
            
-            document.getElementById("main_project_name").innerHTML = "越南觀光儀表板";
-            document.getElementById("main_project_content").innerHTML = "利用morris.js套件製作各個視覺化圖表，透過儀表板幫越南政府規畫系統整合後可即時監測項目。";
+            document.getElementById("main_project_name").innerHTML = "越南觀光分析數據系統";
+            document.getElementById("main_project_content").innerHTML = "利用morris.js套件製作各個視覺化圖表，透過分析數據表幫越南政府規畫系統整合後可即時監測項目。";
         });
         $("#taitune").click(function () {
             document.getElementById("main_img1").style.backgroundImage = "url('img/taitune.jpg')";
@@ -64,7 +64,7 @@
             document.getElementById("main_img3").style.backgroundImage = "url('img/taitune2.jpg')";
             
             document.getElementById("main_project_name").innerHTML = "公司部門展示廳訪客問卷";
-            document.getElementById("main_project_content").innerHTML = "供訪客填寫展場問卷，並進而以儀錶板呈現問卷結果，介接華碩雲盒子API呈現PM2.5等資訊。原展示場地以手寫紀錄訪客資訊，此系統解決員工整理紙本所花費的時間，且將資料自動呈現於儀錶板供員工了解訪客行為。";
+            document.getElementById("main_project_content").innerHTML = "供訪客填寫展場問卷，並進而以分析數據表呈現問卷結果，介接華碩雲盒子API呈現PM2.5等資訊。原展示場地以手寫紀錄訪客資訊，此系統解決員工整理紙本所花費的時間，且將資料自動呈現於分析數據表供員工了解訪客行為。";
         });
 
         $('#playButton').click(function () {
