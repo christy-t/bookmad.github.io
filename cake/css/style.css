@@ -20,6 +20,12 @@ header {
     background-size: cover;
 }
 
+@media screen and (max-width: 500px) {
+    header {
+        height: 250px;
+    }
+}
+
 @media screen and (min-width: 1550px) {
     header {
         height: 650px;
@@ -63,13 +69,15 @@ h4 {
 .ch_h4 {
     color: #CFB37F;
     text-align: center;
-    margin-top: 8px
+    margin-top: 8px;
+    font-size: 28px;
 }
 
 .eng_h4 {
     color: #CFB37F;
     text-align: center;
     font-family: "Lora", "Adobe Fan Heiti", "微軟正黑體", "Microsoft JhengHei", "MingLiU", sans-serif;
+    font-size: 20px;
 }
 
 td {
@@ -198,7 +206,7 @@ img {
 
 @media screen and (max-width: 420px) {
     .column {
-        width: 100%;
+        width: 50%;
     }
 }
 
