@@ -70,7 +70,7 @@ h4 {
     color: #CFB37F;
     text-align: center;
     margin-top: 8px;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .eng_h4 {
@@ -118,6 +118,12 @@ tbody {
     transition: .5s ease;
     backface-visibility: hidden;
     height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+    .column_image img {
+        height: 150px;
+    }
 }
 
 .title_main {
@@ -298,6 +304,12 @@ button {
 
 .column_image {
     height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+    .column_image {
+        height: 150px;
+    }
 }
 
 .content a {
