@@ -1,464 +1,1451 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    background-color: white;
-    font-family: 'Microsoft JhengHei';
-}
-
-body {
-    font-family: 'Microsoft JhengHei' !important;
-}
-
-header {
-    width: 100%;
-    background-image: url(https://www.cupetit.com/img/cupcake/kvHeader.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    height: 550px;
-    background-size: cover;
-}
-
-@media screen and (max-width: 500px) {
-    header {
-        height: 250px;
+    * {
+        box-sizing: border-box;
     }
-}
-
-@media screen and (min-width: 1550px) {
-    header {
-        height: 650px;
+    
+    html {
+        background-color: white;
+        font-family: 'Microsoft JhengHei';
     }
-}
-
-@media screen and (min-width: 2000px) {
-    header {
-        height: 750px;
+    
+    body {
+        font-family: 'Microsoft JhengHei' !important;
     }
-}
-
-#Footer {
-    height: 50px;
-    position: relative;
-    width: 100%;
-    background-color: #F29837;
-}
-
-.logo {
-    width: 10%;
-}
-
-@media (max-width: 414px) {
+    
+    header {
+        width: 100%;
+        background-image: url(https://www.cupetit.com/img/cupcake/kvHeader.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        height: 550px;
+        background-size: cover;
+    }
+    
+    @media screen and (max-width: 500px) {
+        header {
+            height: 250px;
+        }
+    }
+    
+    @media screen and (min-width: 1550px) {
+        header {
+            height: 650px;
+        }
+    }
+    
+    @media screen and (min-width: 2000px) {
+        header {
+            height: 750px;
+        }
+    }
+    
+    #Footer {
+        background-color: #F29837;
+        color: white;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 36px;
+        bottom: 0;
+        font-family: "Lato", "Adobe Fan Heiti", "微軟正黑體", "Microsoft JhengHei", "MingLiU", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    
     .logo {
-        width: 30%;
+        width: 10%;
     }
-}
-
-.title_eng {
-    font-weight: 500;
-}
-
-h4 {
-    margin-bottom: 0 !important;
-    margin-top: 8px !important;
-    text-align: center !important;
-    /*font-size: 20px !important;*/
-}
-
-.ch_h4 {
-    color: #CFB37F;
-    text-align: center;
-    margin-top: 8px;
-    font-size: 24px;
-}
-
-.eng_h4 {
-    color: #CFB37F;
-    text-align: center;
-    font-family: "Lora", "Adobe Fan Heiti", "微軟正黑體", "Microsoft JhengHei", "MingLiU", sans-serif;
-    font-size: 20px;
-}
-
-td {
-    font-family: 'Microsoft JhengHei' !important;
-}
-
-tbody {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-@media screen and (max-width: 996px) {
+    
+    @media (max-width: 414px) {
+        .logo {
+            width: 30%;
+        }
+    }
+    
+    .title_eng {
+        font-weight: 500;
+    }
+    
+    h4 {
+        margin-bottom: 0 !important;
+        margin-top: 8px !important;
+        text-align: center !important;
+        /*font-size: 20px !important;*/
+    }
+    
+    .ch_h4 {
+        color: #CFB37F;
+        text-align: center;
+        margin-top: 8px;
+        font-size: 24px;
+        font-family: 微軟正黑體;
+    }
+    
+    .eng_h4 {
+        color: #CFB37F;
+        text-align: center;
+        font-family: "Lora", "Adobe Fan Heiti", "微軟正黑體", "Microsoft JhengHei", "MingLiU", sans-serif;
+        font-size: 20px;
+    }
+    
+    td {
+        font-family: 'Microsoft JhengHei' !important;
+    }
+    
     tbody {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 700;
     }
-}
-
-
-/* Center website */
-
-.main {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    font-family: 'Microsoft JhengHei';
-}
-
-.content:hover img {
-    opacity: 0.6;
-}
-
-.column_image img {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    height: 200px;
-}
-
-@media screen and (max-width: 500px) {
+    
+    @media screen and (max-width: 996px) {
+        tbody {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    /* Center website */
+    
+    .main {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        font-family: 'Microsoft JhengHei';
+    }
+    
+    .content:hover img {
+        opacity: 0.6;
+        text-decoration: none;
+    }
+    
     .column_image img {
-        height: 150px;
-    }
-}
-
-.title_main {
-    text-align: center;
-    font-weight: 700;
-}
-
-.title {
-    font-size: 36px;
-    display: inline-block;
-    font-family: 'Microsoft JhengHei';
-}
-
-.title_small {
-    font-size: 28px;
-    display: inline-block;
-    font-family: 'Microsoft JhengHei';
-}
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #00356B;
-}
-
-.effect {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-h1 {
-    font-size: 50px;
-    word-break: break-all;
-    color: black;
-    text-align: center;
-    font-family: 'Microsoft JhengHei' !important;
-}
-
-h2 {
-    color: black;
-}
-
-table {
-    width: 100%;
-}
-
-.row {
-    margin: 10px -16px;
-}
-
-
-/* Add padding BETWEEN each column */
-
-.row,
-.row>.column {
-    padding: 8px;
-}
-
-img {
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-
-/* Create three equal columns that floats next to each other */
-
-.column {
-    float: left;
-    width: 33.33%;
-    display: none;
-    /* Hide all elements by default */
-}
-
-@media screen and (max-width: 996px) {
-    .column {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .column {
-        width: 50%;
-    }
-}
-
-td:nth-child(even) {
-    color: #637F51;
-    width: 70%;
-    text-align: right;
-    padding-right: 20px;
-}
-
-td:nth-child(odd) {
-    width: 30%;
-    color: #637F51;
-}
-
-
-/* Clear floats after rows */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/* Content */
-
-.content {
-    padding: 10px;
-}
-
-
-/* The "show" class is added to the filtered elements */
-
-.show {
-    display: block;
-}
-
-
-/* Style the buttons */
-
-.categorybtn {
-    border: none;
-    outline: none;
-    padding: 0px 20px;
-    background-color: rgba(255, 0, 0, 0);
-    cursor: pointer;
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Microsoft JhengHei';
-    color: #86c81e;
-    display: inline-block;
-}
-
-.categorybtn:after {
-    content: '';
-    position: absolute;
-    left: auto;
-    top: 6px;
-    bottom: auto;
-    right: 0;
-    height: 68%;
-    width: 2px;
-    background-color: #F29837;
-}
-
-.categorybtn:nth-child(7):after {
-    content: '';
-    position: absolute;
-    left: auto;
-    top: 6px;
-    bottom: auto;
-    right: 0;
-    height: 68%;
-    width: 0px;
-}
-
-.categorybtn:hover {
-    color: #F29837;
-}
-
-button {
-    outline: none !important;
-}
-
-#myBtnContainer .active {
-    color: #F29837;
-}
-
-.column_image {
-    height: 200px;
-}
-
-@media screen and (max-width: 500px) {
-    .column_image {
-        height: 150px;
-    }
-}
-
-.content a {
-    text-decoration: none;
-    display: block;
-    color: black;
-}
-
-.content a:hover {
-    text-decoration: none;
-    color: #86c81e;
-}
-
-#myBtnContainer {
-    display: inline-table;
-    text-align: center;
-    margin: auto;
-    width: 100%;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-.navbar-header {
-    background: lightblue;
-    padding: 10px 30px;
-    border-bottom: 1px solid #E3E3E3;
-}
-
-.navbar-header .navbar-text {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Microsoft JhengHei';
-}
-
-.navbar-header .navbar-social {
-    float: right;
-    position: relative;
-    margin-top: 10px;
-}
-
-@media (max-width: 414px) {
-    .navbar-header .navbar-social {
-        float: unset;
-        margin-top: 0px;
-    }
-}
-
-.navbar-social ul li {
-    list-style: none;
-    display: inline;
-}
-
-.navbar-social ul li a {
-    color: #fff;
-    font-size: 15px;
-    padding: 5px 5px;
-    margin: 0 5px;
-    transition: all 0.2s ease-in;
-}
-
-.navbar-social ul li .fa:hover {
-    transform: scale(1.2);
-}
-
-.navbar-body {
-    min-height: 50px;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 20px 30px;
-}
-
-.navbar-logo {
-    float: left;
-    left: 30px;
-    margin: 15px 30px;
-}
-
-.navbar-body ul {
-    right: 40px;
-    top: -5px;
-    float: right;
-}
-
-.navbar-body ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 18px 10px;
-}
-
-.navbar-body ul li a {
-    font-size: 13px;
-    font-weight: 600px;
-    margin: 0 10px;
-}
-
-.toggle-open {
-    display: none;
-}
-
-@media screen and (max-width: 800px) {
-    .navbar-body>ul {
-        display: none;
-        height: auto;
+        opacity: 1;
+        display: block;
         width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        height: 200px;
+    }
+    
+    @media screen and (max-width: 500px) {
+        .column_image img {
+            height: 150px;
+        }
+    }
+    
+    .title_main {
+        text-align: center;
+        font-weight: 700;
+    }
+    
+    .title {
+        font-size: 36px;
+        display: inline-block;
+        font-family: 'Microsoft JhengHei';
+    }
+    
+    .title_small {
+        font-size: 28px;
+        display: inline-block;
+        font-family: 'Microsoft JhengHei';
+    }
+    
+    #particles-js {
         position: absolute;
-        z-index: 1;
-        top: 90px;
-        left: 0%;
-        background-color: #000;
-        overflow-x: hidden;
-        transition: 1s;
+        width: 100%;
+        height: 100%;
+        background: #00356B;
+    }
+    
+    .effect {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         text-align: center;
     }
-    .navbar-body>ul>li {
+    
+    h1 {
+        font-size: 50px;
+        word-break: break-all;
+        color: black;
+        text-align: center;
+        font-family: 'Microsoft JhengHei' !important;
+    }
+    
+    h2 {
+        color: black;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    .row {
+        margin: 10px -16px;
+    }
+    /* Add padding BETWEEN each column */
+    
+    .row,
+    .row>.column {
+        padding: 8px;
+    }
+    
+    img {
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    /* Create three equal columns that floats next to each other */
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        display: none;
+        /* Hide all elements by default */
+    }
+    
+    @media screen and (max-width: 996px) {
+        .column {
+            width: 50%;
+        }
+    }
+    
+    @media screen and (max-width: 420px) {
+        .column {
+            width: 50%;
+        }
+    }
+    
+    td:nth-child(even) {
+        color: #637F51;
+        width: 70%;
+        text-align: right;
+        padding-right: 20px;
+    }
+    
+    td:nth-child(odd) {
+        width: 30%;
+        color: #637F51;
+    }
+    /* Clear floats after rows */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Content */
+    
+    .content {
+        padding: 10px;
+    }
+    /* The "show" class is added to the filtered elements */
+    
+    .show {
         display: block;
+    }
+    /* Style the buttons */
+    
+    .categorybtn {
+        border: none;
+        outline: none;
+        padding: 0px 20px;
+        background-color: rgba(255, 0, 0, 0);
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 700;
+        font-family: 'Microsoft JhengHei';
+        color: #86c81e;
+        display: inline-block;
+    }
+    
+    .categorybtn:after {
+        content: '';
+        position: absolute;
+        left: auto;
+        top: 6px;
+        bottom: auto;
+        right: 0;
+        height: 68%;
+        width: 2px;
+        background-color: #F29837;
+    }
+    
+    .categorybtn:nth-child(7):after {
+        content: '';
+        position: absolute;
+        left: auto;
+        top: 6px;
+        bottom: auto;
+        right: 0;
+        height: 68%;
+        width: 0px;
+    }
+    
+    .categorybtn:hover {
+        color: #F29837;
+    }
+    
+    button {
+        outline: none !important;
+    }
+    
+    #myBtnContainer .active {
+        color: #F29837;
+    }
+    
+    .column_image {
+        height: 200px;
+    }
+    
+    @media screen and (max-width: 500px) {
+        .column_image {
+            height: 150px;
+        }
+    }
+    
+    .content a {
+        text-decoration: none;
+        display: block;
+        color: black;
+    }
+    
+    .content a:hover {
+        text-decoration: none;
+        color: #86c81e;
+    }
+    
+    #myBtnContainer {
+        display: inline-table;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
         position: relative;
     }
-    .navbar-body ul li a {
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .navbar-header {
+        background: lightblue;
+        padding: 10px 30px;
+        border-bottom: 1px solid #E3E3E3;
+    }
+    
+    .navbar-header .navbar-text {
         color: #fff;
-        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Microsoft JhengHei';
     }
-    .navbar-body>ul>li {
-        padding: 10px 20px 0;
-    }
-    .toggle-open {
-        display: block;
+    
+    .navbar-header .navbar-social {
         float: right;
-        font-size: 25px;
         position: relative;
-        right: 30px;
-        top: 8px;
+        margin-top: 10px;
     }
-}
-
-@media screen and (min-width: 801px) {
-    .navbar-body>ul {
+    
+    @media (max-width: 414px) {
+        .navbar-header .navbar-social {
+            float: unset;
+            margin-top: 0px;
+        }
+    }
+    
+    .navbar-social ul li {
+        list-style: none;
+        display: inline;
+    }
+    
+    .navbar-social ul li a {
+        color: #fff;
+        font-size: 15px;
+        padding: 5px 5px;
+        margin: 0 5px;
+        transition: all 0.2s ease-in;
+    }
+    
+    .navbar-social ul li .fa:hover {
+        transform: scale(1.2);
+    }
+    
+    .navbar-body {
+        min-height: 50px;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 20px 30px;
+    }
+    
+    .navbar-logo {
+        float: left;
+        left: 30px;
+        margin: 15px 30px;
+    }
+    
+    .navbar-body ul {
+        right: 40px;
+        top: -5px;
+        float: right;
+    }
+    
+    .navbar-body ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 18px 10px;
+    }
+    
+    .navbar-body ul li a {
+        font-size: 13px;
+        font-weight: 600px;
+        margin: 0 10px;
+    }
+    
+    .toggle-open {
+        display: none;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .navbar-body>ul {
+            display: none;
+            height: auto;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            top: 90px;
+            left: 0%;
+            background-color: #000;
+            overflow-x: hidden;
+            transition: 1s;
+            text-align: center;
+        }
+        .navbar-body>ul>li {
+            display: block;
+            position: relative;
+        }
+        .navbar-body ul li a {
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .navbar-body>ul>li {
+            padding: 10px 20px 0;
+        }
+        .toggle-open {
+            display: block;
+            float: right;
+            font-size: 25px;
+            position: relative;
+            right: 30px;
+            top: 8px;
+        }
+    }
+    
+    @media screen and (min-width: 801px) {
+        .navbar-body>ul {
+            display: block;
+        }
+    }
+    
+    @charset "utf-8";
+    /* ==========================================
+   標籤重置
+========================================== */
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        font-family: '微軟正黑體';
+        background-color: #fff;
+    }
+    
+    .ulSet,
+    .ulSet li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    a {
+        color: #777;
+        text-decoration: none;
+    }
+    /* ==========================================
+   主選單框架
+========================================== */
+    
+    #navBar {
+        width: 100%;
+        overflow: hidden;
+        background-color: #f4f4f4;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    #navBar .fullWrap {
+        position: relative;
+        max-height: 45px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #navBar .maxWrap {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    /* ==========================================
+   第一層
+========================================== */
+    
+    .navList {
+        position: relative;
+        float: left;
+        height: 100%;
+    }
+    
+    .navList li {
+        float: left;
+        height: 45px;
+        line-height: 45px;
+    }
+    
+    .navList li a {
+        position: relative;
+        display: block;
+        padding: 0 10px;
+        font-family: 微軟正黑體;
+    }
+    
+    .navList li a:after {
+        display: none;
+        pointer-events: none;
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        margin-top: -2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 5px 0 5px;
+        border-color: #777 transparent transparent transparent;
+    }
+    /* 無子項目時的滑入樣式 */
+    
+    .navList li a:hover {
+        color: #333;
+    }
+    
+    .navList li a:hover:after {
+        border-color: #333 transparent transparent transparent;
+    }
+    /* 當前頁面停留樣式 */
+    
+    .navList li.current a {
+        color: #3aabd7;
+    }
+    
+    .navList li.current a:after {
+        border-color: #3aabd7 transparent transparent transparent;
+    }
+    /* 有子項目的樣式 */
+    
+    .navList li.subLink a {
+        padding-right: 25px;
+    }
+    
+    .navList li.subLink a:after {
         display: block;
     }
-}
-
-;
+    /* 樣式重置 */
+    
+    .navList li.subLink li a {
+        padding-right: 10px;
+        color: #777;
+    }
+    
+    .navList li.subLink li a:after {
+        display: none;
+    }
+    /* ==========================================
+   第二層
+========================================== */
+    
+    .navList .subBox {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        margin: 0 -1000em;
+        padding: 0 1000em;
+        padding-bottom: 10px;
+        width: 1200px;
+        overflow: hidden;
+        background-color: #f5f5f5;
+        z-index: 20;
+    }
+    
+    .navList .subBox ul {
+        position: relative;
+        padding: 5px 40px 5px 0;
+        width: 1160px;
+        height: 40px;
+    }
+    
+    .navList .subBox li {
+        height: auto;
+        line-height: 20px;
+    }
+    
+    .navList .subBox li a {
+        padding: 5px 10px;
+    }
+    
+    .navList .subBox li a:hover {
+        text-decoration: underline;
+    }
+    /* More 按鈕 */
+    
+    .subBox li.more {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 42px;
+        height: 40px;
+        overflow: hidden;
+        z-index: 20;
+    }
+    
+    .subBox li.more .btn {
+        position: relative;
+        padding: 13px 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    
+    .subBox li.more .btn:before {
+        display: none;
+        pointer-events: none;
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 6px 6px 6px;
+        border-color: transparent transparent #000 transparent;
+    }
+    
+    .subBox li.more span {
+        display: block;
+        margin-bottom: 2px;
+        width: 3px;
+        height: 3px;
+        background-color: #000;
+    }
+    
+    .subBox li.more:hover,
+    .subBox li.more.open {
+        background-color: #ccc;
+    }
+    
+    .subBox li.more.open .btn:before {
+        display: block;
+    }
+    
+    .subBox li.more.show {
+        display: block;
+    }
+    /* ==========================================
+   右側選項
+========================================== */
+    
+    .subNav {
+        float: right;
+        padding-top: 8px;
+        height: 20px;
+        line-height: 20px;
+    }
+    
+    .subNav a {
+        display: inline-block;
+        margin-right: 2px;
+        padding: 3px;
+        width: 30px;
+        height: 30px;
+        color: #777;
+        text-align: center;
+        border-radius: 30px;
+        line-height: 22px;
+        border: 1px solid #777;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .subNav .fblink {
+        display: inline-block;
+        padding: 3px 20px;
+        width: auto;
+        color: #fff;
+        letter-spacing: 2px;
+        background-color: #4267B2;
+        border: 1px solid #4267B2;
+    }
+    
+    .subNav .linelink {
+        display: inline-block;
+        padding: 3px 20px;
+        width: auto;
+        color: #fff;
+        letter-spacing: 2px;
+        background-color: #3AC816;
+        border: 1px solid #3AC816;
+    }
+    /* Hover */
+    
+    .subNav a:hover {
+        color: #fff;
+        background-color: #3aabd7;
+        border: 1px solid #3aabd7;
+        text-decoration: none;
+    }
+    
+    .subNav .register:hover {
+        color: #3aabd7;
+        background-color: #fff;
+        border: 1px solid #3aabd7;
+    }
+    
+    .subNav .linelink:hover {
+        color: white;
+        background-color: #50D878;
+        border: 1px solid #50D878;
+        text-decoration: none;
+    }
+    /* ==========================================
+   選單加上的樣式
+========================================== */
+    
+    #navBar.active {
+        background-color: #3aabd7;
+    }
+    
+    #navBar.active .navList li a {
+        color: #d4d4d4;
+    }
+    
+    #navBar.active .navList li a:after {
+        border-color: #d4d4d4 transparent transparent transparent;
+    }
+    
+    #navBar.active .subNav a {
+        color: #fff;
+        border-color: #fff;
+    }
+    
+    #navBar.active .subNav .register {
+        color: #3aabd7;
+        background-color: #fff;
+    }
+    
+    #navBar.active .fullWrap {
+        max-height: 1000px;
+        height: 85px;
+    }
+    
+    #navBar .navList li.active a {
+        color: #fff;
+    }
+    
+    #navBar .navList li.active a:after {
+        border-color: #fff transparent transparent transparent;
+    }
+    
+    #navBar .navList li.active .subBox {
+        display: block;
+    }
+    
+    #navBar .navList li.active .subBox a {
+        color: #777;
+    }
+    /* ==========================================
+   RWD 選單按鈕
+========================================== */
+    
+    .navButtonBar {
+        display: none;
+        height: 45px;
+    }
+    
+    .navButtonBar.open {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .navButton {
+        float: right;
+        margin: 5px 10px 0 0;
+        padding: 4px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    
+    .navButton .btn {
+        position: relative;
+        margin-top: 5px;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+    
+    .navButton span {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #ccc;
+        border-radius: 3px;
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+    
+    .navButton span:nth-child(1) {
+        top: 0;
+    }
+    
+    .navButton span:nth-child(2),
+    .navButton span:nth-child(3) {
+        top: 6px;
+    }
+    
+    .navButton span:nth-child(4) {
+        top: 12px;
+    }
+    /* 點擊時 */
+    
+    .navButton.open {
+        background-color: #f1f1f1;
+    }
+    
+    .navButton.open span {
+        background-color: #999;
+    }
+    
+    .navButton.open .btn span:nth-child(1) {
+        top: 6px;
+        left: 50%;
+        width: 0;
+    }
+    
+    .navButton.open .btn span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    .navButton.open .btn span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    
+    .navButton.open .btn span:nth-child(4) {
+        top: 6px;
+        left: 50%;
+        width: 0;
+    }
+    /* ==========================================
+   一般螢幕視窗寬度 <= 1200px
+========================================== */
+    
+    @media screen and (max-width:1200px) {
+        #navBar .maxWrap {
+            max-width: 1000px;
+        }
+        .navList .subBox {
+            width: 1000px;
+        }
+        .navList .subBox ul {
+            width: 960px;
+        }
+    }
+    /* ==========================================
+   行動裝置寬度 <= 1024px ( 不考慮電腦螢幕寬度尺寸小於 1024 時)
+@media screen and (max-device-width:1024px)
+========================================== */
+    
+    @media screen and (max-width:1024px) {
+        .navButtonBar {
+            display: block;
+        }
+        #navBar {
+            overflow: visible;
+        }
+        #navBar .fullWrap,
+        #navBar.active .fullWrap {
+            height: auto;
+            max-height: 1000em;
+        }
+        #navBar .maxWrap {
+            max-width: 100%;
+        }
+        /* 重置點擊時樣式 */
+        #navBar.active {
+            background-color: #f4f4f4;
+        }
+        #navBar.active .navList li a {
+            color: #999;
+        }
+        #navBar.active .navList li a:after {
+            border-color: #777 transparent transparent transparent;
+        }
+        #navBar.active .navList li.active a {
+            color: #fff;
+            background-color: #3aabd7;
+        }
+        #navBar.active .navList li.active a:after {
+            border-color: #fff transparent transparent transparent;
+        }
+        #navBar.active .navList li.active .subBox a {
+            color: #777;
+            background-color: #fff;
+        }
+        #navBar.active li.current a,
+        #navBar.active li a:hover {
+            color: #999;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        #navBar.active .subNav a,
+        #navBar.active .subNav .register,
+        #navBar.active .subNav a:hover,
+        #navBar.active .subNav .register:hover {
+            color: #777;
+            background-color: #f4f4f4;
+        }
+        /* 主選單 - 第一層 */
+        .navList {
+            display: none;
+            float: none;
+            position: relative;
+            width: 100%;
+            height: auto;
+            z-index: 0;
+        }
+        .navList li,
+        .navList li li {
+            float: none;
+            width: 100%;
+            height: auto;
+            line-height: 20px;
+        }
+        .navList li a {
+            display: block;
+            padding: 8px 10px;
+            color: #999;
+            text-align: center;
+            font-family: 微軟正黑體;
+        }
+        .navList li a:after {
+            right: 15px;
+        }
+        /* 當前頁面停留樣式 */
+        .navList li.current a {
+            color: #999;
+            background-color: transparent;
+        }
+        .navList li.current a:after {
+            border-color: #fff transparent transparent transparent;
+        }
+        /* 樣式重置 */
+        .navList li.current li a {
+            color: #777;
+            background-color: #fff;
+        }
+        .navList li.current li a:after {
+            display: none;
+        }
+        /* 主選單 - 第二層 */
+        .navList .subBox {
+            display: none;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        .navList .subBox ul {
+            position: relative;
+            padding: 0;
+            width: 100%;
+            height: auto;
+        }
+        .navList .subBox li.more {
+            display: none;
+        }
+        .navList .subBox li a {
+            position: relative;
+            padding: 8px 10px 8px 25px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .navList .subBox li a:before {
+            pointer-events: none;
+            content: '-';
+            position: absolute;
+            top: 7px;
+            left: 10px;
+            color: #777;
+        }
+        /* 右側選項 */
+        .subNav {
+            display: none;
+            float: none;
+            padding: 0;
+            width: 100%;
+            height: auto;
+            border-top: 1px solid #ddd;
+        }
+        .subNav a,
+        .subNav a.navsocial {
+            position: relative;
+            display: block;
+            margin: 0;
+            padding: 8px 10px;
+            width: 100%;
+            height: auto;
+            color: #777;
+            border: none;
+            text-align: center;
+            line-height: 20px;
+            letter-spacing: 0;
+            border-radius: 0;
+            background-color: #f4f4f4;
+            font-family: 微軟正黑體;
+        }
+        .subNav a span {
+            display: none;
+        }
+        .subNav a[data-title]:after {
+            content: attr(data-title);
+        }
+        /* 滑入樣式 */
+        .navList li a,
+        .navList li.current a,
+        .navList li a:hover,
+        .subNav a:hover,
+        .subNav a.register:hover {
+            color: #777;
+            text-decoration: none;
+            border: none;
+            background-color: transparent;
+        }
+        .navList li.subLink a:hover:after {
+            border-color: #777 transparent transparent transparent;
+        }
+        /* Open */
+        .navList.open,
+        .subNav.open {
+            display: block;
+        }
+        .navList.open .subBox li.more {
+            display: none;
+        }
+        /* Active */
+        .navList li.dropdown {
+            color: #fff;
+            background-color: #3aabd7;
+        }
+        .navList li.dropdown .subBox {
+            display: block;
+            background-color: #fff;
+        }
+        .navList li.dropdown .subBox li a:hover {
+            color: #777;
+            background-color: #fff;
+        }
+    }
+    
+    .citySection h2 {
+        font-family: "Lato", "Adobe Fan Heiti", "微軟正黑體", "Microsoft JhengHei", "MingLiU", sans-serif;
+        color: #fff;
+        background-color: #CFB37F;
+        text-align: center;
+        letter-spacing: 3px;
+        line-height: 40px;
+        font-size: 21px;
+        width: 100%;
+    }
+    
+    .locationInfo {
+        cursor: pointer;
+        float: left;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-bottom-width: 1px;
+    }
+    
+    .locationName {
+        font-family: "Lato", "Adobe Fan Heiti", "微軟正黑體", "Microsoft JhengHei", "MingLiU", sans-serif;
+        color: #CFB37F;
+        line-height: 28px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        font-weight: 300;
+    }
+    
+    .locationContent {
+        font-family: "Lato", "Adobe Fan Heiti", "微軟正黑體", "Microsoft JhengHei", "MingLiU", sans-serif;
+        color: #CFB37F;
+        line-height: 28px;
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        margin-top: 24px;
+    }
+    
+    .locationItem {
+        list-style: none;
+    }
+    
+    #contact-page .service-item {
+        text-align: center;
+    }
+    
+    #contact-page {
+        overflow: hidden
+    }
+    
+    #contact-page .fix-mb {
+        margin-bottom: 20px
+    }
+    
+    #contact-page .service-item {
+        text-align: center
+    }
+    
+    #contact-page .service-item ul {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        font-size: 18px
+    }
+    
+    #contact-page .service-item ul li {
+        line-height: 25px;
+        display: inline-block;
+        position: relative;
+        padding: 0 5px;
+        font-weight: 300
+    }
+    
+    #contact-page .service-item ul li:after {
+        content: '/';
+        position: absolute;
+        color: #4A4A4A;
+        width: 5px;
+        text-align: center;
+        right: -2.5px
+    }
+    
+    #contact-page .service-item ul li:last-of-type:after {
+        display: none
+    }
+    
+    #contact-page .contact-method .cont-method-top {
+        padding: 32px 0 16px 0
+    }
+    
+    #contact-page .contact-method .cont-method-top img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px
+    }
+    
+    #contact-page .contact-method .cont-method-top h2 {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 18px;
+        line-height: 27px;
+        color: #E69D52;
+        font-weight: normal;
+        font-family: 'Microsoft JhengHei';
+    }
+    
+    #contact-page .contact-method .cont-method-content {
+        font-size: 16px;
+        line-height: 27px
+    }
+    
+    #contact-page .contact-method .cont-method-content ul {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none
+    }
+    
+    #contact-page .contact-method .cont-method-content ul li {
+        color: #4A4A4A;
+        display: inline-block;
+        position: relative;
+        padding: 0 5px;
+        line-height: 36px
+    }
+    
+    #contact-page .contact-method .cont-method-content ul li:after {
+        content: '/';
+        position: absolute;
+        color: #00B8EE;
+        width: 5px;
+        text-align: center;
+        right: -2.5px
+    }
+    
+    #contact-page .contact-method .cont-method-content ul li:last-of-type:after {
+        display: none
+    }
+    
+    #contact-page .location-card {
+        width: 100%;
+        margin: 0 auto
+    }
+    
+    #contact-page .location-card .location-card-header {
+        color: #00B8EE;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        padding: 20px 10px
+    }
+    
+    #contact-page .location-card .map-iframe {
+        height: 262px
+    }
+    
+    #contact-page .location-card .map-iframe iframe {
+        width: 100%;
+        height: 500px;
+    }
+    
+    #contact-page .location-card .map-min-height {
+        height: 262px;
+        position: relative
+    }
+    
+    #contact-page .location-card .map-min-height .loc-dec2 {
+        position: absolute;
+        z-index: 2;
+        right: 0px;
+        top: -75px;
+        pointer-events: none;
+        display: none
+    }
+    
+    @media (min-width: 576px) {
+        #contact-page .location-card .map-min-height .loc-dec2 {
+            display: block
+        }
+    }
+    
+    @media (min-width: 768px) {
+        #contact-page .location-card .map-min-height .loc-dec2 {
+            right: -15px
+        }
+    }
+    
+    @media (min-width: 992px) {
+        #contact-page .location-card .map-min-height .loc-dec2 {
+            right: 13px
+        }
+    }
+    
+    #contact-page .location-card .loc-info {
+        position: relative;
+        padding-top: 40px
+    }
+    
+    #contact-page .location-card .loc-info .loc-dec1 {
+        position: absolute;
+        pointer-events: none;
+        display: none
+    }
+    
+    @media (min-width: 576px) {
+        #contact-page .location-card .loc-info .loc-dec1 {
+            display: block;
+            top: -40px;
+            left: -62px
+        }
+    }
+    
+    #contact-page .location-card .loc-info dl {
+        position: relative;
+        margin-bottom: 15px
+    }
+    
+    #contact-page .location-card .loc-info dl dt {
+        position: absolute;
+        left: 0;
+        width: 20px
+    }
+    
+    #contact-page .location-card .loc-info dl dd {
+        margin: 0 auto;
+        padding-left: 20px
+    }
+    
+    #contact-page .location-card .map-link {
+        display: inline-block;
+        font-size: 12px;
+        color: #00B8EE;
+        margin: 0 2px;
+        font-weight: 600;
+        vertical-align: middle
+    }
+    
+    #contact-page .location-card .map-link img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 12px;
+        height: 12px;
+        margin: -3px 4px 0 4px
+    }
+    
+    #contact-page .location-card .icon-address,
+    #contact-page .location-card .icon-phone,
+    #contact-page .location-card .icon-time {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    
+    #contact-page .location-card .icon-address {
+        background-image: url(/assets/img/home-107dcf8d0e18aea230ae3e1771a2ec752cde3376ff9b3d22803bbe67a3d16508.png)
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        #contact-page .location-card .icon-address {
+            background-image: url(/assets/img/home@2x-38913b74a67e2728f56d05e37ae7802cebc53e786ccf2d828d0c8502e774a32b.png)
+        }
+    }
+    
+    #contact-page .location-card .icon-phone {
+        background-image: url(/assets/img/phone2-d024c8fbeb49ec1c7dae77cb8e8465aac0e395d1795c07005b9f4dea0be0d2bb.png)
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        #contact-page .location-card .icon-phone {
+            background-image: url(/assets/img/phone2@2x-a572ce44ff7685e3cf1a303a4f4eb5237a3301d120ae10771f2c433b67cfbb40.png)
+        }
+    }
+    
+    #contact-page .location-card .icon-time {
+        background-image: url(/assets/img/time-clock-ab9ff47b30356ff637a2125d222b0384e8c8451478db36729a48e6e3d0f8df60.png)
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        #contact-page .location-card .icon-time {
+            background-image: url(/assets/img/time-clock@2x-e570aedb994bfdcd55fe012e8c59173306fc77dd6b00187bb73a8f0c1e7fd33a.png)
+        }
+    }
+    
+    #contact-page .location-card-single {
+        max-width: 100%;
+        width: 100%
+    }
+    
+    @media (min-width: 992px) {
+        #contact-page .location-card-single .loc-info {
+            padding-top: 0px
+        }
+    }
+    
+    #contact-page .location-card-single .loc-dec1 {
+        position: absolute;
+        display: none
+    }
+    
+    @media (min-width: 576px) {
+        #contact-page .location-card-single .loc-dec1 {
+            display: block;
+            bottom: -40px;
+            left: -38px
+        }
+    }
+    
+    .contact_content {
+        font-family: 'Microsoft JhengHei';
+    }
+    
+    .linelinkcontact {
+        display: inline-block;
+        padding: 3px 20px;
+        width: auto;
+        color: #fff;
+        letter-spacing: 2px;
+        background-color: #3AC816;
+        border: 1px solid #3AC816;
+        font-family: 'Microsoft JhengHei';
+    }
+    
+    .linelinkcontact:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .fblinkcontact {
+        display: inline-block;
+        padding: 3px 20px;
+        width: auto;
+        color: #fff;
+        letter-spacing: 2px;
+        background-color: #4267B2;
+        border: 1px solid #4267B2;
+        font-family: 'Microsoft JhengHei';
+    }
+    
+    .fblinkcontact:hover {
+        color: #fff;
+        text-decoration: none;
+    }
