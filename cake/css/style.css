@@ -39,12 +39,14 @@
     }
     
     #Footer {
+        height: 65px;
+        position: relative;
+        margin-top: -65px;
+        padding: 15px;
         background-color: #F29837;
         color: white;
-        position: absolute;
         text-align: center;
         width: 100%;
-        height: 36px;
         bottom: 0;
         font-family: "Lato", "Adobe Fan Heiti", "微軟正黑體", "Microsoft JhengHei", "MingLiU", sans-serif;
         font-weight: 500;
